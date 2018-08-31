@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1535458595 source:c:\users\alumno\desktop\clase\ejercicios-c\práctica 03\práctica 3\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1535466684 source:c:\users\alumno\desktop\clase\ejercicios-c\práctica 03\main.c
+	<stdio.h>
+	<stdlib.h>
+

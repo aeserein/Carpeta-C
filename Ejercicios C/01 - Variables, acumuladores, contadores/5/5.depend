@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1535168717 source:d:\alvaro\trabajos\programación\01 - programación\ejercicios c\variables, acumuladores, contadores\5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
