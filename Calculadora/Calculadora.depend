@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1535871480 source:d:\alvaro\trabajos\programación\01 - programación 1\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	<D:\Alvaro\Trabajos\Programación\01 - Programación 1\Calculadora\funciones\funciones.c>
+
