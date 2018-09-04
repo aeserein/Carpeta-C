@@ -1,6 +1,27 @@
 # depslib dependency file v1.0
-1535871480 source:d:\alvaro\trabajos\programación\01 - programación 1\calculadora\main.c
+1536029548 source:d:\alvaro\trabajos\programación\01 - programación 1\calculadora\funciones.c
 	<stdio.h>
 	<stdlib.h>
-	<D:\Alvaro\Trabajos\Programación\01 - Programación 1\Calculadora\funciones\funciones.c>
+	<conio.h>
+	<ctype.h>
+
+1536030166 source:d:\alvaro\trabajos\programación\01 - programación 1\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1536030126 d:\alvaro\trabajos\programación\01 - programación 1\calculadora\funciones.h
+
+1536029548 source:d:\users\win7\desktop\asd\tp_laboratorio_1\calculadora\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1536031515 source:d:\users\win7\desktop\asd\tp_laboratorio_1\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1536030126 d:\users\win7\desktop\asd\tp_laboratorio_1\calculadora\funciones.h
 

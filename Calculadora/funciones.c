@@ -28,24 +28,34 @@ float dividirDos(float n1, float n2) {
     return resultado;
 }
 
-float factorial(float n) {
-    float resultado;
-    if (n==1) {
-        return 1;
-    } else {
-        resultado = n*factorial(n-1);
+long factorialDe(float n) {
+    int numero = (int)n;
+    long resultado = 1;
+    if (numero!=0) {
+        int f;
+        for (f=1 ; f<=numero ; f++) {
+            resultado = resultado*f;
+        }
     }
     return resultado;
 }
 
-float ingresarNumero(void) {
+float ingresarFloat(char texto[32]) {
     float n;
-    printf("Ingrese un n%cmero:\t" , 163);
+    printf("%s" , texto);
     scanf("%f" , &n);
     return n;
 }
 
+int ingresarInt(char texto[32]) {
+    int n;
+    printf("%s" , texto);
+    scanf("%d" , &n);
+    return n;
+}
+
 void pausaYClear(void) {
+    printf("\n");
     system("pause");
     system("cls");
 }
@@ -59,4 +69,10 @@ int continuar(void) {
     } while (letra!='S' && letra!='N');
 
     return (letra=='S');
+}
+
+void imprimirTituloCalculadora(void){
+    printf("*****************\n");
+    printf("*  CALCULADORA  *\n");
+    printf("*****************\n\n");
 }
