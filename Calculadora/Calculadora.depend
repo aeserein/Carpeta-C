@@ -1,16 +1,16 @@
 # depslib dependency file v1.0
-1536029548 source:d:\alvaro\trabajos\programación\01 - programación 1\calculadora\funciones.c
+1536185710 source:d:\alvaro\trabajos\programación\01 - programación 1\calculadora\funciones.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	<ctype.h>
 
-1536030166 source:d:\alvaro\trabajos\programación\01 - programación 1\calculadora\main.c
+1536098091 source:d:\alvaro\trabajos\programación\01 - programación 1\calculadora\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
 
-1536030126 d:\alvaro\trabajos\programación\01 - programación 1\calculadora\funciones.h
+1536187824 d:\alvaro\trabajos\programación\01 - programación 1\calculadora\funciones.h
 
 1536029548 source:d:\users\win7\desktop\asd\tp_laboratorio_1\calculadora\funciones.c
 	<stdio.h>
@@ -24,4 +24,30 @@
 	"funciones.h"
 
 1536030126 d:\users\win7\desktop\asd\tp_laboratorio_1\calculadora\funciones.h
+
+1536061685 source:c:\users\alumno\desktop\asdd\calculadora\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1536061971 source:c:\users\alumno\desktop\asdd\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1536061685 c:\users\alumno\desktop\asdd\calculadora\funciones.h
+
+1536063601 source:c:\users\alumno\desktop\qwewqewqeqwe\calculadora\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1536063601 source:c:\users\alumno\desktop\qwewqewqeqwe\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1536064098 c:\users\alumno\desktop\qwewqewqeqwe\calculadora\funciones.h
 

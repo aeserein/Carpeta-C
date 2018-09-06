@@ -69,15 +69,24 @@ void pausaYClear(void);
  *
  * \param   void
  * \return  int     -   1 si continúa
- *                  -   2 si no continúa
+ *                  -   0 si no continúa
  */
-int continuar(void);
+unsigned short continuar(void);
 
-/** \brief  Muestra el título de la calculadora
+/** \brief  ¿Tiene decimales este float?
+ *
+ * \param   float
+ * \return  int     -   1 si tiene decimales
+ *                  -   0 si no tiene decimales
+ */
+unsigned short tieneDecimalesEsteFloat(float);
+
+/** \brief  Calculadora
  *
  * \param   void
  * \return  void
+ *
  */
-void imprimirTituloCalculadora(void);
+void calculadora(void);
 
 #endif // FUNCIONES_H_INCLUDED
