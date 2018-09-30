@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1537857610 source:c:\documents and settings\alvaro\escritorio\la concha de tu madre\main.c
+	<stdio.h>
+	<stdlib.h>
+	"estructuraGenerica.h"
+
+1537857610 c:\documents and settings\alvaro\escritorio\la concha de tu madre\estructuragenerica.h
+
+1537787942 source:c:\documents and settings\alvaro\escritorio\la concha de tu madre\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1537852083 source:c:\documents and settings\alvaro\escritorio\la concha de tu madre\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1537787942 c:\documents and settings\alvaro\escritorio\la concha de tu madre\strings.h
+
+1537852858 source:c:\documents and settings\alvaro\escritorio\la concha de tu madre\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1537858134 source:c:\documents and settings\alvaro\escritorio\la concha de tu madre\estructuragenerica.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"estructuraGenerica.h"
+	"ingresos.h"
+	"strings.h"
+	"flow.h"
+
+1537787942 c:\documents and settings\alvaro\escritorio\la concha de tu madre\ingresos.h
+
+1537787942 c:\documents and settings\alvaro\escritorio\la concha de tu madre\flow.h
+

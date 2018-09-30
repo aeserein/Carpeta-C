@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1537195341 source:c:\users\alumno\desktop\clase 8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sAlumnos.h"
+
+1537196029 c:\users\alumno\desktop\clase 8\salumnos.h
+
+1537195779 source:c:\users\alumno\desktop\clase 8\salumnos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sAlumnos.h"
+
+1537195779 source:c:\users\alumno\desktop\carpeta c\carpeta-c\ejercicios c\práctica 08\salumnos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sAlumnos.h"
+
+1537196029 c:\users\alumno\desktop\carpeta c\carpeta-c\ejercicios c\práctica 08\salumnos.h
+

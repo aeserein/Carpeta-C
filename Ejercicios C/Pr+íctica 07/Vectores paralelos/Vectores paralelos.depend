@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1536961951 source:c:\documents and settings\alvaro\escritorio\carpeta c\vectores paralelos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vectores_paralelos.h"
+
+1536961951 c:\documents and settings\alvaro\escritorio\carpeta c\vectores paralelos\vectores_paralelos.h
+
+1536963341 source:c:\documents and settings\alvaro\escritorio\carpeta c\vectores paralelos\vectores_paralelos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones\strings.h"
+	"funciones\ingresos.h"
+	"funciones\flow.h"
+
+1536875475 c:\documents and settings\alvaro\escritorio\carpeta c\vectores paralelos\funciones\strings.h
+
+1536802157 c:\documents and settings\alvaro\escritorio\carpeta c\vectores paralelos\funciones\ingresos.h
+
+1536797292 source:c:\documents and settings\alvaro\escritorio\carpeta c\vectores paralelos\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+
+1536962120 source:c:\documents and settings\alvaro\escritorio\carpeta c\vectores paralelos\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1536958505 source:c:\documents and settings\alvaro\escritorio\carpeta c\vectores paralelos\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1536962364 c:\documents and settings\alvaro\escritorio\carpeta c\vectores paralelos\funciones\flow.h
+
+1537185164 source:c:\users\alumno\desktop\carpeta c\carpeta c\vectores paralelos\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1537185164 source:c:\users\alumno\desktop\carpeta c\carpeta c\vectores paralelos\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+
+1537185164 source:c:\users\alumno\desktop\carpeta c\carpeta c\vectores paralelos\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1537185164 source:c:\users\alumno\desktop\carpeta c\carpeta c\vectores paralelos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vectores_paralelos.h"
+
+1537185163 c:\users\alumno\desktop\carpeta c\carpeta c\vectores paralelos\vectores_paralelos.h
+
+1537185164 source:c:\users\alumno\desktop\carpeta c\carpeta c\vectores paralelos\vectores_paralelos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones\strings.h"
+	"funciones\ingresos.h"
+	"funciones\flow.h"
+
+1537185164 c:\users\alumno\desktop\carpeta c\carpeta c\vectores paralelos\funciones\strings.h
+
+1537185164 c:\users\alumno\desktop\carpeta c\carpeta c\vectores paralelos\funciones\ingresos.h
+
+1537185164 c:\users\alumno\desktop\carpeta c\carpeta c\vectores paralelos\funciones\flow.h
+

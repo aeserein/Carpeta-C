@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1537243429 source:c:\documents and settings\alvaro\escritorio\alumnos\estructuras de alumnos\estructuras de alumnos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Estructuras de alumnos.h"
+	"Funciones/ingresos.h"
+	"Funciones/flow.h"
+	"Funciones/strings.h"
+
+1537222909 c:\documents and settings\alvaro\escritorio\alumnos\estructuras de alumnos\funciones\ingresos.h
+
+1537213071 source:c:\documents and settings\alvaro\escritorio\alumnos\estructuras de alumnos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Estructuras de alumnos.h"
+
+1537234035 c:\documents and settings\alvaro\escritorio\alumnos\estructuras de alumnos\estructuras de alumnos.h
+
+1537223532 source:c:\documents and settings\alvaro\escritorio\alumnos\estructuras de alumnos\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+
+1537182780 source:c:\documents and settings\alvaro\escritorio\alumnos\estructuras de alumnos\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1537182780 c:\documents and settings\alvaro\escritorio\alumnos\estructuras de alumnos\funciones\flow.h
+
+1537223290 c:\documents and settings\alvaro\escritorio\alumnos\estructuras de alumnos\funciones\strings.h
+
+1537223447 source:c:\documents and settings\alvaro\escritorio\alumnos\estructuras de alumnos\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1537274832 source:c:\users\alumno\desktop\estructuras\estructuras de alumnos\estructuras de alumnos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Estructuras de alumnos.h"
+	"Funciones/ingresos.h"
+	"Funciones/flow.h"
+	"Funciones/strings.h"
+
+1537274833 c:\users\alumno\desktop\estructuras\estructuras de alumnos\estructuras de alumnos.h
+
+1537274833 c:\users\alumno\desktop\estructuras\estructuras de alumnos\funciones\ingresos.h
+
+1537274833 c:\users\alumno\desktop\estructuras\estructuras de alumnos\funciones\flow.h
+
+1537274833 c:\users\alumno\desktop\estructuras\estructuras de alumnos\funciones\strings.h
+
+1537274833 source:c:\users\alumno\desktop\estructuras\estructuras de alumnos\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1537274833 source:c:\users\alumno\desktop\estructuras\estructuras de alumnos\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+
+1537274833 source:c:\users\alumno\desktop\estructuras\estructuras de alumnos\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1537274833 source:c:\users\alumno\desktop\estructuras\estructuras de alumnos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Estructuras de alumnos.h"
+

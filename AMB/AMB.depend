@@ -1,0 +1,252 @@
+# depslib dependency file v1.0
+1537738029 source:c:\documents and settings\alvaro\escritorio\carpeta c\amb\amb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"amb.h"
+	"extras.h"
+	"menu modificar.h"
+	"funciones/ingresos.h"
+	"funciones/strings.h"
+	"funciones/flow.h"
+
+1537737988 c:\documents and settings\alvaro\escritorio\carpeta c\amb\amb.h
+
+1537737148 source:c:\documents and settings\alvaro\escritorio\carpeta c\amb\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1537304351 c:\documents and settings\alvaro\escritorio\carpeta c\amb\funciones\ingresos.h
+
+1537737148 source:c:\documents and settings\alvaro\escritorio\carpeta c\amb\main.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+
+1537732451 source:c:\documents and settings\alvaro\escritorio\carpeta c\amb\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1537732254 c:\documents and settings\alvaro\escritorio\carpeta c\amb\funciones\strings.h
+
+1537269718 c:\documents and settings\alvaro\escritorio\carpeta c\amb\funciones\flow.h
+
+1537269718 source:c:\documents and settings\alvaro\escritorio\carpeta c\amb\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1537384792 c:\documents and settings\alvaro\escritorio\carpeta c\amb\menu modificar.h
+
+1537737988 source:c:\documents and settings\alvaro\escritorio\carpeta c\amb\menu modificar.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+	"funciones/ingresos.h"
+	"funciones/strings.h"
+	"funciones/flow.h"
+
+1537397483 c:\documents and settings\alvaro\escritorio\carpeta c\amb\extras.h
+	"extras.h"
+
+1537737988 source:c:\documents and settings\alvaro\escritorio\carpeta c\amb\extras.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"amb.h"
+	"extras.h"
+	"funciones/ingresos.h"
+
+1537795427 source:c:\users\alumno\desktop\carpeta c\amb\amb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"amb.h"
+	"extras.h"
+	"menu modificar.h"
+	"funciones/ingresos.h"
+	"funciones/strings.h"
+	"funciones/flow.h"
+
+1537793646 c:\users\alumno\desktop\carpeta c\amb\amb.h
+
+1537746360 c:\users\alumno\desktop\carpeta c\amb\extras.h
+	"extras.h"
+
+1537793608 c:\users\alumno\desktop\carpeta c\amb\menu modificar.h
+	"amb.h"
+
+1537746372 c:\users\alumno\desktop\carpeta c\amb\funciones\ingresos.h
+
+1537746372 c:\users\alumno\desktop\carpeta c\amb\funciones\strings.h
+
+1537794932 c:\users\alumno\desktop\carpeta c\amb\funciones\flow.h
+
+1537793674 source:c:\users\alumno\desktop\carpeta c\amb\extras.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"amb.h"
+	"extras.h"
+	"funciones/ingresos.h"
+	"funciones/flow.h"
+
+1537794932 source:c:\users\alumno\desktop\carpeta c\amb\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1537794578 source:c:\users\alumno\desktop\carpeta c\amb\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1537794452 source:c:\users\alumno\desktop\carpeta c\amb\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1537794578 source:c:\users\alumno\desktop\carpeta c\amb\main.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+	"funciones/ingresos.h"
+
+1537795662 source:c:\users\alumno\desktop\carpeta c\amb\menu modificar.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+	"funciones/ingresos.h"
+	"funciones/strings.h"
+	"funciones/flow.h"
+
+1537793674 source:c:\users\alumno\desktop\carpeta-c\amb\extras.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"amb.h"
+	"extras.h"
+	"funciones/ingresos.h"
+	"funciones/flow.h"
+
+1537800500 c:\users\alumno\desktop\carpeta-c\amb\amb.h
+
+1537746360 c:\users\alumno\desktop\carpeta-c\amb\extras.h
+	"extras.h"
+
+1537746372 c:\users\alumno\desktop\carpeta-c\amb\funciones\ingresos.h
+
+1537794932 c:\users\alumno\desktop\carpeta-c\amb\funciones\flow.h
+
+1537794932 source:c:\users\alumno\desktop\carpeta-c\amb\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1537794578 source:c:\users\alumno\desktop\carpeta-c\amb\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1537746372 c:\users\alumno\desktop\carpeta-c\amb\funciones\strings.h
+
+1537794452 source:c:\users\alumno\desktop\carpeta-c\amb\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1537794578 source:c:\users\alumno\desktop\carpeta-c\amb\main.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+	"funciones/ingresos.h"
+
+1537795662 source:c:\users\alumno\desktop\carpeta-c\amb\menu modificar.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+	"funciones/ingresos.h"
+	"funciones/strings.h"
+	"funciones/flow.h"
+
+1537787942 source:c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\amb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"amb.h"
+	"extras.h"
+	"menu modificar.h"
+	"funciones/ingresos.h"
+	"funciones/strings.h"
+	"funciones/flow.h"
+
+1537787942 c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\amb.h
+
+1537787942 c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\extras.h
+	"extras.h"
+
+1537787942 c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\menu modificar.h
+	"amb.h"
+
+1537787942 c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\funciones\ingresos.h
+
+1537787942 c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\funciones\strings.h
+
+1537787942 c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\funciones\flow.h
+
+1537787942 source:c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\extras.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"amb.h"
+	"extras.h"
+	"funciones/ingresos.h"
+	"funciones/flow.h"
+
+1537787942 source:c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1537787942 source:c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1537787942 source:c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\main.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+	"funciones/ingresos.h"
+
+1537787942 source:c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\menu modificar.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+	"funciones/ingresos.h"
+	"funciones/strings.h"
+	"funciones/flow.h"
+
+1537852083 source:c:\documents and settings\alvaro\escritorio\carpeta-c-master\amb\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
