@@ -39,15 +39,29 @@ void mostrarVectorFloat(float[], int);
 
 ///////////////////////////////////////////////////////////////////////////
 
-void insercionInt(int[], int len);
+void insercionIntCreciente(int[], int);
 
-void insercionFloat(float[], int len);
+void insercionIntDecreciente(int[], int);
+
+void insercionFloatCreciente(float[], int);
+
+void insercionFloatDecreciente(float[], int);
 
 ///////////////////////////////////////////////////////////////////////////
 
 
-void burbujeoFloat(int data[], int len);
+void burbujeoFloatCreciente(int[], int);
 
-void burbujeoInt(int data[], int len);
+void burbujeoFloatCreciente(int[], int);
+
+void burbujeoIntCreciente(int[], int);
+
+void burbujeoIntCreciente(int[], int);
+
+///////////////////////////////////////////////////////////////////////////
+
+int calcularIndiceMinimo(int[], int);
+
+int calcularIndiceMaximo(int[], int);
 
 #endif
