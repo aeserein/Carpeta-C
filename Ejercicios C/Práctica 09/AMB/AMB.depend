@@ -250,3 +250,70 @@
 	<string.h>
 	"strings.h"
 
+1538304204 source:d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\amb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"amb.h"
+	"extras.h"
+	"menu modificar.h"
+	"funciones/ingresos.h"
+	"funciones/strings.h"
+	"funciones/flow.h"
+
+1538304204 d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\amb.h
+
+1538304206 d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\extras.h
+	"extras.h"
+
+1538304206 d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\menu modificar.h
+	"amb.h"
+
+1538304214 d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\funciones\ingresos.h
+
+1538304214 d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\funciones\strings.h
+
+1538304214 d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\funciones\flow.h
+
+1538304206 source:d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\extras.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"amb.h"
+	"extras.h"
+	"funciones/ingresos.h"
+	"funciones/flow.h"
+
+1538304214 source:d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1538304214 source:d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1538304214 source:d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1538304206 source:d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\main.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+	"funciones/ingresos.h"
+
+1538304206 source:d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 09\amb\menu modificar.c
+	<stdio.h>
+	<stdlib.h>
+	"amb.h"
+	"funciones/ingresos.h"
+	"funciones/strings.h"
+	"funciones/flow.h"
+
