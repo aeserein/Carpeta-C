@@ -17,11 +17,13 @@ int main() {
 
     mostrarListadoSeries(listaDeSeries, TAMSERIE);
     printf("\n\n");
+    system("pause");
     mostrarListadoUsuarios(listaDeUsuarios, TAMUSUARIO);
     printf("\n\n");
+    system("pause");
     mostrarListadoUsuariosConSerie(listaDeUsuarios, TAMUSUARIO, listaDeSeries, TAMSERIE);
     printf("\n\n");
-    mostrarCantUsuariosQueMiranCadaSerie(listaDeUsuarios, TAMUSUARIO);
+    //mostrarCantUsuariosQueMiranCadaSerie(listaDeUsuarios, TAMUSUARIO);
 /*
     4. Mostrar por cada serie, el nombre de los usuarios que la ven.
 */

@@ -55,8 +55,7 @@ void mostrarListadoUsuarios(eUsuario lista[], int limite) {
         }
     }
 }
-
-
+////////////////////////////////////////
 void mostrarListadoUsuariosConSerie(eUsuario lista[], int limite, eSerie listaSeries[], int limiteSeries) {
     int i;
     int indiceSerie;
@@ -104,5 +103,5 @@ void mostrarCantUsuariosQueMiranCadaSerie(eUsuario listaUsuarios[], int size) {
     for (f=0 ; f<5 ; f++) {
 
     }
-    mostrarSerie()
+    //mostrarSerie();
 }

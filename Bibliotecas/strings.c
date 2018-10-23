@@ -91,7 +91,6 @@ void ordenarEstosStrings(char strings[][50], int columnas) {
 }
 
 short tieneLetrasEsteString(char string[]) {
-    short len;
     short f;
 
     for (f=0 ; f<strlen(string) ; f++) {

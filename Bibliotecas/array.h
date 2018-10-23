@@ -8,7 +8,17 @@
  * \param   int Tercer argumento    Número a cargar
  * \return  void
  */
-void cargarVectorInt(int[], int, int);
+void cargarVectorInt(int*, int, int);
+
+/** \brief  Cargar un valor en una ubicación específica de un vector
+ *
+ * \param *int  -   El vector
+ * \param int   -   Índice
+ * \param int   -   El valor a ingresar
+ * \return void
+ *
+ */
+void setValue_Int(int*, int, int);
 
 /** \brief  Cargar un vector de n slots con un solo valor float.
  *
@@ -17,7 +27,7 @@ void cargarVectorInt(int[], int, int);
  * \param   float   Tercer argumento    Número a cargar
  * \return  void
  */
-void cargarVectorFloat(float[], int, float);
+void cargarVectorFloat(float*, int, float);
 
 ///////////////////////////////////////////////////////////////////////////
 
@@ -27,7 +37,7 @@ void cargarVectorFloat(float[], int, float);
  * \param   int     Cantidad de slots
  * \return void
  */
-void mostrarVectorInt(int[], int);
+void mostrarVectorInt(int*, int);
 
 /** \brief  Imprime los valores de un vector de float
  *
@@ -35,33 +45,33 @@ void mostrarVectorInt(int[], int);
  * \param   int     Cantidad de slots
  * \return void
  */
-void mostrarVectorFloat(float[], int);
+void mostrarVectorFloat(float*, int);
 
 ///////////////////////////////////////////////////////////////////////////
 
-void insercionIntCreciente(int[], int);
+void insercionIntCreciente(int*, int);
 
-void insercionIntDecreciente(int[], int);
+void insercionIntDecreciente(int*, int);
 
-void insercionFloatCreciente(float[], int);
+void insercionFloatCreciente(float*, int);
 
-void insercionFloatDecreciente(float[], int);
-
-///////////////////////////////////////////////////////////////////////////
-
-
-void burbujeoFloatCreciente(int[], int);
-
-void burbujeoFloatCreciente(int[], int);
-
-void burbujeoIntCreciente(int[], int);
-
-void burbujeoIntCreciente(int[], int);
+void insercionFloatDecreciente(float*, int);
 
 ///////////////////////////////////////////////////////////////////////////
 
-int calcularIndiceMinimo(int[], int);
 
-int calcularIndiceMaximo(int[], int);
+void burbujeoFloatCreciente(int*, int);
+
+void burbujeoFloatCreciente(int*, int);
+
+void burbujeoIntCreciente(int*, int);
+
+void burbujeoIntCreciente(int*, int);
+
+///////////////////////////////////////////////////////////////////////////
+
+int calcularIndiceMinimo(int*, int);
+
+int calcularIndiceMaximo(int*, int);
 
 #endif

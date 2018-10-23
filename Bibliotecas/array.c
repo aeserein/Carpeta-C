@@ -1,155 +1,159 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void cargarVectorInt(int vector[], int len, int numeroACargar) {
-    cantidad--;
+void cargarVectorInt(int *vector, int len, int numeroACargar) {
+    len--;
     for ( ; len>=0 ; len--) {
-        vector[len] = numeroACargar;
+        *(vector+len) = numeroACargar;
     }
 }
 
-void cargarVectorFloat(float vector[], int len, float numeroACargar) {
-    cantidad--;
+void setValue_Int(int *vector, int ubicacion, int valor) {
+    *(vector+ubicacion) = valor;
+}
+
+void cargarVectorFloat(float *vector, int len, float numeroACargar) {
+    len--;
     for ( ; len>=0 ; len--) {
-        vector[len] = numeroACargar;
+        *(vector+len) = numeroACargar;
     }
 }
 
 ///////////////////////////////////////////////////////////////////////////
 
-void mostrarVectorInt(int vector[], int len) {
+void mostrarVectorInt(int *vector, int len) {
     int i; // Para imprimir en el orden correcto
     for (i=0 ; i<len ; i++) {
-        printf("%d\t" , vector[i]);
+        printf("%d\t" , *(vector+i));
     }
 }
 
-void mostrarVectorFloat(float vector[], int len) {
+void mostrarVectorFloat(float *vector, int len) {
     int i;
     for (i=0 ; i<len ; i++) {
-        printf("%d\t" , vector[i]);
+        printf("%f\t" , *(vector+i));
     }
 }
 
 ///////////////////////////////////////////////////////////////////////////
 
-void insercionIntCreciente(int vector[], int len) {
+void insercionIntCreciente(int *vector, int len) {
     int f;
     int i;
     int aux;
     for (f=1 ; f<len ; f++) {
-        aux = vector[f];
+        aux = *(vector+f);
         i = f-1;
-        while (j>=0 && aux<vector[i]) {
-            vector[i+1] = vector[i];
+        while (i>=0 && aux<*(vector+i)) {
+            *(vector+i+1) = *(vector+i);
             i--;
         }
         vector[i+1] = aux;
     }
 }
 
-void insercionIntDereciente(int vector[], int len) { // Sin checkear
+void insercionIntDereciente(int *vector, int len) { // Sin checkear
     int f;
     int i;
     int aux;
     for (f=1 ; f<len ; f++) {
-        aux = vector[f];
+        aux = *(vector+f);
         i = f-1;
-        while (j>=0 && aux>vector[i]) {
-            vector[i+1] = vector[i];
+        while (i>=0 && aux>*(vector+i)) {
+            *(vector+i+1) = *(vector+i);
             i--;
         }
-        vector[i+1] = aux;
+        *(vector+i+1) = aux;
     }
 }
 
-void insercionFloatCreciente(float vector[], int len) {
+void insercionFloatCreciente(float *vector, int len) {
     int f;
     int i;
     float aux;
     for (f=1 ; f<len ; f++) {
-        aux = vector[f];
+        aux = *(vector+f);
         i = f-1;
-        while (j>=0 && aux<vector[i]) {
-            vector[i+1] = vector[i];
+        while (i>=0 && aux<*(vector+i)) {
+            *(vector+i+1) = *(vector+i);
             i--;
         }
-        vector[i+1] = aux;
+        *(vector+i+1) = aux;
     }
 }
 
-void insercionFloatCreciente(float vector[], int len) { // Sin checkear
+void insercionFloatDecreciente(float *vector, int len) { // Sin checkear
     int f;
     int i;
     float aux;
     for (f=1 ; f<len ; f++) {
-        aux = vector[f];
+        aux = *(vector+f);
         i = f-1;
-        while (j>=0 && aux>vector[i]) {
-            vector[i+1] = vector[i];
+        while (i>=0 && aux>*(vector+i)) {
+            *(vector+i+1) = *(vector+i);
             i--;
         }
-        vector[i+1] = aux;
+        *(vector+i+1) = aux;
     }
 }
 
 ///////////////////////////////////////////////////////////////////////////
 
-void burbujeoIntCreciente(int vector[], int len) {
+void burbujeoIntCreciente(int *vector, int len) {
     int f;
     int i;
     int aux;
     for (f=0 ; f<len-1 ; f++){
         for (i=f+1 ; i<len ; i++) {
-            if (vector[f]>vector[i]) {
-                aux = vector[i];
-                vector[i] = vector[f];
-                vector[f] = aux;
+            if ( *(vector+f) > *(vector+i) ) {
+                aux = *(vector+i);
+                *(vector+i) = *(vector+f);
+                *(vector+f) = aux;
             }
         }
     }
 }
 
-void burbujeoIntDereciente(int vector[], int len) { // Sin checkear
+void burbujeoIntDereciente(int *vector, int len) { // Sin checkear
     int f;
     int i;
     int aux;
     for (f=0 ; f<len-1 ; f++){
         for (i=f+1 ; i<len ; i++) {
-            if (vector[f]<vector[i]) {
-                aux = vector[i];
-                vector[i] = vector[f];
-                vector[f] = aux;
+            if (*(vector+f)<*(vector+i)) {
+                aux = *(vector+i);
+                *(vector+i) = *(vector+f);
+                *(vector+f) = aux;
             }
         }
     }
 }
 
-void burbujeoFloatCreciente(float vector[], int len) {
+void burbujeoFloatCreciente(float *vector, int len) {
     int f;
     int i;
     float aux;
     for (f=0 ; f<len-1 ; f++){
-        for (i=p+1 ; i<len ; i++) {
-            if (vector[f]>vector[i]) {
-                aux = vector[i];
-                vector[i] = vector[f];
-                vector[f] = aux;
+        for (i=f+1 ; i<len ; i++) {
+            if (*(vector+f)>*(vector+i)) {
+                aux = *(vector+i);
+                *(vector+i) = *(vector+f);
+                *(vector+f) = aux;
             }
         }
     }
 }
 
-void burbujeoFloatDereciente(float vector[], int len) { //Sin checkear
+void burbujeoFloatDereciente(float *vector, int len) { //Sin checkear
     int f;
     int i;
     float aux;
     for (f=0 ; f<len-1 ; f++){
-        for (i=p+1 ; i<len ; i++) {
-            if (vector[f]<vector[i]) {
-                aux = vector[i];
-                vector[i] = vector[f];
-                vector[f] = aux;
+        for (i=f+1 ; i<len ; i++) {
+            if (*(vector+f)<*(vector+i)) {
+                aux = *(vector+i);
+                *(vector+i) = *(vector+f);
+                *(vector+f) = aux;
             }
         }
     }
@@ -157,15 +161,15 @@ void burbujeoFloatDereciente(float vector[], int len) { //Sin checkear
 
 ///////////////////////////////////////////////////////////////////////////
 
-int calcularIndiceMinimo(int array[], int size) {
+int calcularIndiceMinimo(int *array, int size) {
     int indice=1;
     int minimo = array[0];
     int indiceMinimo = 0;
 
     for ( ; indice < size ; indice++) {
 
-       if(array[indice] < minimo) {
-           minimo = array[indice];
+       if(*(array+indice) < minimo) {
+           minimo = *(array+indice);
            indiceMinimo = indice;
        }
 
@@ -173,15 +177,15 @@ int calcularIndiceMinimo(int array[], int size) {
     return indiceMinimo;
 }
 
-int calcularIndiceMaximo(int array[], int size) {
+int calcularIndiceMaximo(int *array, int size) {
     int indice=1;
-    int maximo = array[0];
+    int maximo = *array;
     int indiceMaximo = 0;
 
     for ( ; indice < size ; indice++) {
 
-       if(array[indice] > maximo) {
-           maximo = array[indice];
+       if(*(array+indice) > maximo) {
+           maximo = *(array+indice);
            indiceMaximo = indice;
        }
 

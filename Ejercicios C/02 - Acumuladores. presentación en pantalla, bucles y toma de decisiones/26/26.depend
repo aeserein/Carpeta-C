@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1539130586 source:c:\documents and settings\alvaro\escritorio\ejercicios\26\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+

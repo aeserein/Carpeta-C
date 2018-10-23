@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1540298837 source:c:\users\alumno\desktop\clase 13\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1540301181 source:c:\users\alumno\desktop\clase 13\gdm_estructura.c
+	"gdm_estructura.h"
+
+1540301195 c:\users\alumno\desktop\clase 13\gdm_estructura.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1540304507 source:c:\users\alumno\desktop\clase-12\clase 13\main.c
+	<stdio.h>
+	<stdlib.h>
+	"gdm_estructura.h"
+
+1540307027 c:\users\alumno\desktop\clase-12\clase 13\gdm_estructura.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

@@ -1,0 +1,153 @@
+# depslib dependency file v1.0
+1538442570 source:d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\main.c
+	"programa.h"
+
+1538304208 source:d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1538304208 source:d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1538304208 d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\strings.h
+
+1538304208 source:d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1538476248 source:d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\programa.c
+	"programa.h"
+
+1538476114 d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\programa.h
+	<stdio.h>
+	<stdlib.h>
+	"Funciones/ArrayEmployees.h"
+
+1538454312 d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\estructuraempleados.h
+	"ingresos.h"
+	"strings.h"
+	"flow.h"
+
+1538304208 d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\ingresos.h
+
+1538304208 d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\flow.h
+
+1538454867 source:d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\estructuraempleados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"estructuraEmpleados.h"
+
+1538463677 d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\arrayemployees.h
+	"ingresos.h"
+	"strings.h"
+	"flow.h"
+
+1538470436 source:d:\alvaro\trabajos\programación\01 - programación 1\trabajos prácticos\tp 2 amb\funciones\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+
+1538542398 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\funciones\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+
+1538542398 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\funciones\arrayemployees.h
+	"ingresos.h"
+	"strings.h"
+	"flow.h"
+
+1538304208 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\funciones\ingresos.h
+
+1538304208 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\funciones\strings.h
+
+1538304208 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\funciones\flow.h
+
+1538531988 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1538304208 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1538304208 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1538542807 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\main.c
+	"programa.h"
+
+1538542826 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\programa.h
+	<stdio.h>
+	<stdlib.h>
+	"Funciones/ArrayEmployees.h"
+
+1538540550 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 2 amb\programa.c
+	"programa.h"
+
+1538612492 source:c:\documents and settings\alvaro\escritorio\tp 2 amb\funciones\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+
+1538612492 c:\documents and settings\alvaro\escritorio\tp 2 amb\funciones\arrayemployees.h
+	"ingresos.h"
+	"strings.h"
+	"flow.h"
+
+1538304208 c:\documents and settings\alvaro\escritorio\tp 2 amb\funciones\ingresos.h
+
+1538614436 c:\documents and settings\alvaro\escritorio\tp 2 amb\funciones\strings.h
+
+1538614184 c:\documents and settings\alvaro\escritorio\tp 2 amb\funciones\flow.h
+
+1538531990 source:c:\documents and settings\alvaro\escritorio\tp 2 amb\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1538304208 source:c:\documents and settings\alvaro\escritorio\tp 2 amb\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1538304208 source:c:\documents and settings\alvaro\escritorio\tp 2 amb\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1538610785 source:c:\documents and settings\alvaro\escritorio\tp 2 amb\main.c
+	"programa.h"
+
+1538614009 c:\documents and settings\alvaro\escritorio\tp 2 amb\programa.h
+	<stdio.h>
+	<stdlib.h>
+	"Funciones/ArrayEmployees.h"
+
+1538610891 source:c:\documents and settings\alvaro\escritorio\tp 2 amb\programa.c
+	"programa.h"
+

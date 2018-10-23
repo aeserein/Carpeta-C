@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1540174534 source:d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\10 - punteros\02\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../../../Bibliotecas/array.h"
+	"../../../Bibliotecas/ingresos.h"
+	"../../../Bibliotecas/strings.h"
+	"../../../Bibliotecas/flow.h"
+
+1540177181 d:\alvaro\trabajos\programación\01 - programación 1\bibliotecas\array.h
+
+1540174761 source:d:\alvaro\trabajos\programación\01 - programación 1\bibliotecas\array.c
+	<stdio.h>
+	<stdlib.h>
+
+1538304208 source:d:\alvaro\trabajos\programación\01 - programación 1\bibliotecas\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1538304208 d:\alvaro\trabajos\programación\01 - programación 1\bibliotecas\strings.h
+
+1538304208 d:\alvaro\trabajos\programación\01 - programación 1\bibliotecas\ingresos.h
+
+1540169423 source:d:\alvaro\trabajos\programación\01 - programación 1\bibliotecas\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1538304208 source:d:\alvaro\trabajos\programación\01 - programación 1\bibliotecas\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1538304208 d:\alvaro\trabajos\programación\01 - programación 1\bibliotecas\flow.h
+
