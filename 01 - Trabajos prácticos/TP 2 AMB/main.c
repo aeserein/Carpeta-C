@@ -2,7 +2,9 @@
 
 int main() {
 
-    programaPrincipal();
+    int debug;
 
-    return 0;
+    debug = mainProgramHere();
+
+    return debug;
 }

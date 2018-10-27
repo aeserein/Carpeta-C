@@ -10,16 +10,39 @@ typedef struct {
     int id;
     char nombre[20];
     int edad;
+    float altura;
 } persona;
 
 persona* nuevaPersona();
-persona* nuevaPersonaConValores(int, char[], int);
 persona* nuevaPersonaVacia();
+persona* nuevaPersonaVaciaConID(int id);
+persona* nuevaPersonaConValores(int id, char nombre[], int edad, float altura);
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
-short persona_setID(persona*, int);
-int persona_getID(persona*);
+persona* nuevoArrayDePersonas(int cuantasPersonas);
+persona* cambiarTamanhoDeArrayDePersonas(persona *punteroOriginal, int cantidadOriginal, int cuantasPersonas);
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+int setID(persona*, int id);
+int setIDBetween(persona *puntero, int id, int min, int max);
+int getID(persona*);
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+int setNombre(persona *puntero, char nombre[]);
+char* getNombre(persona *puntero);
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+int persona_setAltura(persona *puntero, float altura);
+float persona_getAltura(persona *puntero);
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+int removerPersona(persona *puntero);
+int removerArrayDePersonas(persona *puntero, int cantidad);
 
 //////////////////////////////////////////////////////////////////////////////////////////
 

@@ -21,7 +21,7 @@ int main() {
             printf("INDEX %d:   %d\n", f, *(pInt+f));
         }
     }
-    pInt = (int*)realloc(pInt, sizeof(int)*CANT+5);
+    pInt = (int*)realloc(pInt, sizeof(int)*(CANT+5));
 
     if (pInt!=NULL) {
         for (f=0 ; f+CANT<CANT+5 ; f++) {
