@@ -79,7 +79,11 @@ int setIDBetween(persona *puntero, int id, int min, int max) {
 }
 
 int getID(persona *puntero) {
-    return puntero->id;
+    int id = -1;
+    if (puntero!=NULL) {
+        id = puntero->id;
+    }
+    return id;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -94,7 +98,11 @@ int setNombre(persona* puntero, char nombre[]) {
 }
 
 char* getNombre(persona* puntero) {
-    return puntero->nombre;
+    if (puntero!=NULL) {
+        return puntero->nombre;
+    } else {
+        return NULL;
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -110,7 +118,11 @@ int setAltura(persona* puntero, float altura) {
 }
 
 float getAltura(persona* puntero) {
-    return puntero->altura;
+    float altura = -1;
+    if (puntero!=NULL) {
+        altura = puntero->altura;
+    }
+    return altura;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -124,18 +136,6 @@ int removerPersona(persona *puntero) {
     return debug;
 }
 
-int removerArrayDePersonas(persona *puntero, int cantidad) {
-    int debug = 0;
-    short f;
-    if (puntero!=NULL) {
-        for (f=0 ; f<cantidad; f++) {
-            free(puntero+cantidad);
-        }
-        debug = 1;
-    }
-    return debug;
-}
-
 //////////////////////////////////////////////////////////////////////////////////////////
 
 void mostrarPersona(persona *puntero) {
@@ -144,12 +144,3 @@ void mostrarPersona(persona *puntero) {
     printf("EDAD\t%d\n", puntero->edad);
     printf("ALTURA\t%.2f\n", puntero->altura);
 }
-
-
-/*  PREGUNTAS
-
-    func removerArrayDePersonas()
-        linea free(puntero+cantidad);
-        y ciclo for
-                ¿se escribe así?
-*/

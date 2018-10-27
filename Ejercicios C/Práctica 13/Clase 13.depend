@@ -34,3 +34,13 @@
 1540615066 source:d:\alvaro\trabajos\programación\01 - programación 1\ejercicios c\práctica 13\gdm_estructura.c
 	"gdm_estructura.h"
 
+1540643079 source:c:\users\alumno\desktop\carpeta-c\ejercicios c\práctica 13\main.c
+	<stdio.h>
+	<stdlib.h>
+	"gdm_estructura.h"
+
+1540643079 c:\users\alumno\desktop\carpeta-c\ejercicios c\práctica 13\gdm_estructura.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
