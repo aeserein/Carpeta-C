@@ -3,153 +3,55 @@
 
 ///////////////////////////////////////////////////////////////////////
 
-/** \brief  Recibe dos float y devuelve la suma
- *
- * \param   float
- * \param   float
- * \return  float   -   Resultado de la suma
- */
-float sumarDosFloat(float, float);
+float sumarFloat(float *n1, float *n2);
 
-/** \brief  Recibe dos int y devuelve la suma
- *          No chequea división por cero
- *
- * \param   int
- * \param   int
- * \return  int     -   Resultado de la suma
- */
-int sumarDosInt(int, int);
+int sumarInt(int *n1, int *n2);
 
-/** \brief  Recibe dos short y devuelve la suma
- *          No chequea división por cero
- *
- * \param   short
- * \param   short
- * \return  short     -   Resultado de la suma
- */
-short sumarDosShort(int, int);
+short sumarShort(short *n1, short *n2);
+
+float restarFloat(float *n1, float *n2);
+
+int restarInt(int *n1, int *n2);
+
+short restarShort(short *n1, short *n2);
 
 ///////////////////////////////////////////////////////////////////////
 
-/** \brief  Recibe dos float y devuelve la resta
- *
- * \param   float
- * \param   float
- * \return  float   -   Resultado de la resta
- */
-float restarDosFloat(float, float);
+float multiplicarFloat(float *n1, float *n2);
 
-/** \brief  Recibe dos int y devuelve la resta
- *
- * \param   int
- * \param   int
- * \return  int     -   Resultado de la resta
- */
-int restarDosInt(int, int);
+int multiplicarInt(int *n1, int *n2);
 
-/** \brief  Recibe dos short y devuelve la resta
- *
- * \param   short
- * \param   short
- * \return  short   -   Resultado de la resta
- */
-short restarDosShort(short, short);
+short multiplicarShort(short *n1, short *n2);
+
+float dividirFloat(float *n1, float *n2);
+
+float dividirInt(int *n1, int *n2);
+
+float dividirShort(short *n1, short *n2);
 
 ///////////////////////////////////////////////////////////////////////
 
-/** \brief  Recibe dos float y devuelve multiplicación
- *
- * \param   float
- * \param   float
- * \return  float   -   Resultado de la multiplicación
- */
-float multiplicarDosFloat(float, float);
-
-/** \brief  Recibe dos int y devuelve multiplicación
- *
- * \param   int
- * \param   int
- * \return  int     -   Resultado de la multiplicación
- */
-int multiplicarDosInt(int, int);
-
-/** \brief  Recibe dos short y devuelve multiplicación
- *
- * \param   short
- * \param   short
- * \return  short     -   Resultado de la multiplicación
- */
-short multiplicarDosShort(short, short);
+double potencia(void *n, void *pow);
 
 ///////////////////////////////////////////////////////////////////////
 
-/** \brief  Recibe dos float y devuelve división
- *          No chequea división por cero
- *
- * \param   float
- * \param   float
- * \return  float   -   Resultado de la división
- */
-float dividirDosFloat(float, float);
+long factorialDeFloat(float *n);
 
-/** \brief  Recibe dos int y devuelve división
- *          No chequea división por cero
- *
- * \param   int
- * \param   int
- * \return  float   -   Resultado de la división
- */
-float dividirDosInt(int, int);
+long factorialDeInt(int *n);
 
 ///////////////////////////////////////////////////////////////////////
 
-/** \brief  Recibe un float y devuelve factorial
- *          Ignora los decimales, solo usa la parte entera
- *	        No chequea negativo ni número con coma
- *
- * \param   float
- * \return  long    -   Factorial del número recibido
- */
-long factorialDeFloat(float);
+short tieneDecimalesEsteFloat(float *numero);
 
-/** \brief  Recibe un int y devuelve factorial
- *	    No chequea negativo
- *
- * \param   int
- * \return  long    -   Factorial del número recibido
- */
-long factorialDeInt(int);
+int cuantosDecimalesTieneEsteFloat(float *numero);
+
+short esPrimoEsteInt(int *numero);
 
 ///////////////////////////////////////////////////////////////////////
 
-/** \brief  ¿Tiene decimales este float?
- *
- * \param   float
- * \return  short   -   1 si tiene decimales
- *                      0 si es n,000000
- *
- */
-short tieneDecimalesEsteFloat(float numero);
+float superficieTrianguloInt(int *base, int *altura);
 
-///////////////////////////////////////////////////////////////////////
-
-/** \brief  Calcula superficie de un triángulo de lados int
- *
- * \param   int     Base
- * \param   int     Altura
- * \return  float   Superficie
- *
- */
-float superficieTrianguloInt(int, int);
-
-/** \brief  Calcula superficie de un triángulo de lados float
- *
- * \param   float   Base
- * \param   float   Altura
- * \return  float   Superficie
- *
- */
-float superficieTrianguloFloat(float, float);
+float superficieTrianguloFloat(float *base, float *altura);
 
 ///////////////////////////////////////////////////////////////////////
 

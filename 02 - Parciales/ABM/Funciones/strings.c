@@ -4,9 +4,9 @@
 #include <ctype.h>
 #include "strings.h"
 
-void getString(char vector[], char mensaje[32], int len) {
-    char aux[1024];
-    printf("%s" , mensaje);
+void getString(char *vector, const char *mensaje, int len) {
+    char aux[len];
+    printf("%s", *mensaje);
     fflush(stdin);
     gets(aux);
     while(strlen(aux)>len || strlen(aux)<0) {
