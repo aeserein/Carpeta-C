@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "LinkedList.h"
+#include "../LinkedList.h"
 #include "Employee.h"
 
 /** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
@@ -10,8 +10,7 @@
  * \return int
  *
  */
-int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
-{
+int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee) {
 
     return 1;
 }

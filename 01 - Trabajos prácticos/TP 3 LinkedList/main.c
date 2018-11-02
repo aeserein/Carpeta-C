@@ -4,6 +4,6 @@ int main() {
 
     int debug;
     debug = programa();
-    return = debug;
-
+    renglon();
+    return debug;
 }

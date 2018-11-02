@@ -43,7 +43,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Funciones/Employee.h" />
-		<Unit filename="Funciones/LinkedList.h" />
+		<Unit filename="Funciones/flow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Funciones/flow.h" />
 		<Unit filename="Funciones/ingresos.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -52,6 +55,11 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Funciones/parser.h" />
+		<Unit filename="Funciones/strings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Funciones/strings.h" />
+		<Unit filename="LinkedList.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -19,3 +19,7 @@ unsigned short pregunta(char texto[50]) {
 
     return (letra=='S');
 }
+
+void renglon() {
+    printf("\n");
+}

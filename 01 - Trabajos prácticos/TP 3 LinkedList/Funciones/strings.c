@@ -30,27 +30,6 @@ void primerasLetrasMayusculas(char texto[]) {
     }
 }
 
-void nombreYApellido(char nombreCompleto[], int len) {
-
-    if (len%2==0) {
-        len = (len/2) - 1;
-    } else {
-        len = len/2;
-    }
-    char nombre[len];
-    char apellido[len];
-
-    getString(nombre, "Ingrese nombre/s:", len);
-    getString(apellido, "Ingrese apellido/s:\t", len);
-
-    strcpy(nombreCompleto, apellido);
-    strcat(nombreCompleto, ", ");
-    strcat(nombreCompleto, nombre);
-
-    primerasLetrasMayusculas(nombreCompleto);
-
-}
-
 void ordenarDosStrings(char string1[], char string2[]) {
     /*
 	short f;

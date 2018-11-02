@@ -2,11 +2,12 @@
 #define PROGRAMA_H_INCLUDED
 #include <stdio.h>
 #include <stdlib.h>
-#include "Funciones/LinkedList.h"
+#include "LinkedList.h"
 #include "Funciones/Controller.h"
 #include "Funciones/Employee.h"
 #include "Funciones/parser.h"
 #include "Funciones/ingresos.h"
+#include "Funciones/flow.h"
 
 void menu();
 

@@ -53,3 +53,75 @@
 	"LinkedList.h"
 	"Employee.h"
 
+1541032675 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"Controller.h"
+
+1540935447 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\linkedlist.h
+
+1541029190 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1541032796 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.c
+	"Employee.h"
+
+1540933975 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"strings.h"
+
+1540936739 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.h
+
+1540935491 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1540939517 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"../LinkedList.h"
+	"Employee.h"
+
+1540936739 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1540935955 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\main.c
+	"programa.h"
+
+1540937604 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\programa.h
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Funciones/Controller.h"
+	"Funciones/Employee.h"
+	"Funciones/parser.h"
+	"Funciones/ingresos.h"
+	"Funciones/flow.h"
+
+1540938879 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.h
+	<stdio.h>
+	<stdlib.h>
+	"../LinkedList.h"
+	"Employee.h"
+
+1540933976 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.h
+
+1540933975 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.h
+
+1540935491 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\flow.h
+
+1541031678 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\programa.c
+	"programa.h"
+
+1540942989 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\linkedlist.h
+

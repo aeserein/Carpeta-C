@@ -5,8 +5,6 @@ void getString(char *vec, const char *mensaje, int len);
 
 void primerasLetrasMayusculas(char[]);
 
-void nombreYApellido(char[], int);
-
 void ordenarDosStrings(char[], char[]);
 
 void ordenarEstosStrings(char[][50], int);

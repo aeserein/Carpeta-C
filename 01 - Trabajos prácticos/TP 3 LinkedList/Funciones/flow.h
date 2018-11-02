@@ -14,6 +14,8 @@ void pausaYClear(void);
  * \return  int     -   1 si continúa
  *                  -   0 si no continúa
  */
-unsigned short pregunta(char[]);
+unsigned short pregunta(char texto[50]);
+
+void renglon(void);
 
 #endif
