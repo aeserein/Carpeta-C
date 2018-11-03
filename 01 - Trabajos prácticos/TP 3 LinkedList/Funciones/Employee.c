@@ -6,23 +6,16 @@ Employee* employee_new() {
     return puntero;
 }
 
-Employee* employee_newParametros(char* idStr, char* nombreStr, char* horasTrabajadasStr, char* salarioStr) {
+Employee* employee_newParametros(int *id, char* nombre, int *horasTrabajadas, int *salario) {
     Employee *puntero;
-    int idAux;
-    int hoursAux;
-    int salaryAux;
 
     puntero = (Employee*)malloc(sizeof(Employee));
 
     if (puntero!=NULL) {
-        idAux = atoi(idStr);
-        hoursAux = atoi(nombreStr);
-        salaryAux = atoi(salarioStr);
-
-        puntero->id = idAux;
-        strcpy(puntero->nombre, nombreStr);
-        puntero->horasTrabajadas = hoursAux;
-        puntero->sueldo = salaryAux;
+        puntero->id = *id;
+        strcpy(puntero->nombre, nombre);
+        puntero->horasTrabajadas = *horasTrabajadas;
+        puntero->sueldo = *salario;
     }
     return puntero;
 }
@@ -117,15 +110,26 @@ int employee_getSueldo(Employee* this) {
 int employee_print(Employee *puntero) {
     int debug = 0;
     if (puntero!=NULL) {
-        printf("---------------------------------------------------------------------------------------------\n");
-        printf("   ID:\t%d\t\t", puntero->id);
-        printf("NOMBRE:\t%s\t\t", puntero->nombre);
+
+        printf("   ID:\t%d\t", puntero->id);
+        printf("NOMBRE:\t%.7s\t\t", puntero->nombre);
         printf("HORAS:\t%d\t\t", puntero->horasTrabajadas);
-        printf("SUELDO:\t%d\t\n", puntero->sueldo);
-        printf("   &:\t%d\t\t", &(puntero->id));
+        printf("SUELDO:\t%d\n", puntero->sueldo);
+
+        debug = 1;
+    }
+    return debug;
+}
+
+int employee_DEBUG_printMemory(Employee *puntero) {
+    int debug = 0;
+    if (puntero!=NULL) {
+
+        printf("   &:\t%d\t", &(puntero->id));
         printf("&:\t%d\t\t", &(puntero->nombre));
         printf("&:\t%d\t\t", &(puntero->horasTrabajadas));
-        printf("&:\t%d\t\n", &(puntero->sueldo));
+        printf("&:\t%d\n\n", &(puntero->sueldo));
+
         debug = 1;
     }
     return debug;

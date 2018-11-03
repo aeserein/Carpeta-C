@@ -20,14 +20,19 @@ int programa(void) {
     int option;
 
     LinkedList* listaEmpleados = ll_newLinkedList();
+    /*
+    Employee eUno = {1,"PRIMERO",11,1111};
+    Employee eDos = {2,"SEGUNDO",22,2222};
+    Employee eTres = {3,"TERCERO",33,3333};
+    Employee eCuatro = {4,"CUARTO",44,4444};
+    Employee eCinco = {5,"QUINTO",55,5555};
 
-    Employee unEmpleado = {1,"PRIMERO",11,1111};
-    Employee otroEmpleado = {2,"SEGUNDO",22,2222};
-
-    debug = ll_add(listaEmpleados, &unEmpleado);
-    printf("TEST - ADD1: %d\n", debug);
-    debug = ll_add(listaEmpleados, &otroEmpleado);
-    printf("TEST - ADD2: %d\n", debug);
+    debug = ll_add(listaEmpleados, &eUno);
+    debug = ll_add(listaEmpleados, &eDos);
+    debug = ll_add(listaEmpleados, &eTres);
+    debug = ll_add(listaEmpleados, &eCuatro);
+    debug = ll_add(listaEmpleados, &eCinco);
+    */
 
     do{
         menu();
@@ -42,7 +47,10 @@ int programa(void) {
                 break;
             }
             case 2 : { /// Cargar desde el archivo data.csv (modo binario)
-
+                debug = controller_loadFromBinary("data.csv", listaEmpleados);
+                printf("TEST - loadFromBinary: %d\n", debug);
+                pausaYClear();
+                break;
             }
             case 3 : { /// Alta de empleado
             }
