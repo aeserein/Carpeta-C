@@ -22,6 +22,7 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee);
 ////////////////////////////////////////////////////////////////////////////////////
 
 int indexFromID(LinkedList *pArrayListEmployee, int *id);
+int getAvailableID(LinkedList *pArrayListEmployee);
 int edit_name(Employee *auxEmployee);
 int edit_hours(Employee *auxEmployee);
 int edit_salary(Employee *auxEmployee);
@@ -39,5 +40,9 @@ void c_noSeEncontroEmpleado(void);
 void c_nombreModificado(void);
 void c_horasModificado(void);
 void c_salarioModificado(void);
+void c_altaDeEmpleado(void);
+void c_noHayEmpleadosEnElSistema(void);
+void c_primeroCargueUnArchivo(void);
+void c_listaCargada(int amount);
 
 #endif // CONTROLLER_H_INCLUDED

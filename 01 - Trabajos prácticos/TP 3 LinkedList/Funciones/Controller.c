@@ -51,11 +51,16 @@ int controller_addEmployee(LinkedList* pArrayListEmployee) {
     int id, hours, salary;
     char name[NOMBRE];
     Employee *newEmployee = NULL;
+    system("cls");
 
-    id = getInt("Ingresar ID:\t");
-    getString(name, "Ingresar nombre:\t", NOMBRE);
-    hours = getInt("Ingresar horas:\t");
-    salary = getInt("Ingresar salario:\t");
+    c_altaDeEmpleado();
+    id = getAvailableID(pArrayListEmployee);
+    printf("                          ID:\t%d\n"
+           "                          ________\n\n", id);
+    getString(name, "                          Nombre:\t", NOMBRE);
+    primerasLetrasMayusculas(name);
+    hours = getInt("                          Carga horaria:\t");
+    salary = getInt("                          Salario:\t");
 
     newEmployee = employee_newParametros(&id, name, &hours, &salary);
     ll_add(pArrayListEmployee, newEmployee);
@@ -75,6 +80,8 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee) {
     int len = ll_len(pArrayListEmployee);
     int f;
 
+    ll_sort(pArrayListEmployee, sortByID, 1);
+    system("cls");
     //printf("LEN: %d\n", len);
     for(f=0; f<len; f++) {
 
@@ -261,6 +268,11 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee) {
         }
     }
     fclose(pFile);
+
+
+
+
+    printf("Cantidad: %d", count);
     return count;
 }
 
@@ -284,10 +296,36 @@ int indexFromID(LinkedList *pArrayListEmployee, int *id) {
     return index;
 }
 
+int getAvailableID(LinkedList *pArrayListEmployee) {
+    int newID = 0;
+    Employee *employeeAux;
+    int len = ll_len(pArrayListEmployee);
+    int listOfIDs[len];
+    short encontroLibre=0;
+    short f;
+
+    for (f=0 ; f<len ; f++) {
+        employeeAux = ll_get(pArrayListEmployee, f);
+        *(listOfIDs+f) = employeeAux->id;
+    }
+
+    while (!encontroLibre) {
+        newID++;
+        encontroLibre = 1;
+        for (f=0 ; f<len ; f++) {
+            if (newID==*(listOfIDs+f)) {
+                encontroLibre = 0;
+            }
+        }
+    }
+    return newID;
+}
+
 int edit_name(Employee *auxEmployee) {
     char name[NOMBRE];
     int debug = 0;
-    getString(name, "Nuevo nombre:\t", NOMBRE);
+    getString(name, "    Nuevo nombre:\t", NOMBRE);
+    primerasLetrasMayusculas(name);
     employee_printFromStack(&(auxEmployee->id),
                             name,
                             &(auxEmployee->horasTrabajadas),
@@ -494,4 +532,99 @@ void c_salarioModificado() {
     printf("|                        |       /\n");
     printf("|   Salario modificado   |   %c  /\n", 92);
     printf("|________________________|    %c/", 92);
+}
+
+void c_altaDeEmpleado() {
+    renglon(); renglon();
+    printf("                           _____________________\n");
+    printf("                          |                     |\n");
+    printf("                          |  Alta de empleado   |\n");
+    printf("                          |_____________________|\n\n\n");
+}
+
+void c_noHayEmpleadosEnElSistema() {
+    short f;
+    system("cls");
+    renglon(); renglon();
+    printf("     _____________________________________________________________________\n"
+           "    |                                                                     |\n"
+           "    |    1. Cargar desde el archivo data.csv (modo texto)                 |\n"
+           "    |    2. Cargar desde el archivo data.bin (modo binario)               |\n"
+           "    |_____________________________________________________________________|\n"
+           "    |                                                                     |\n"
+           "    |    3. Alta de empleado                                              |\n"
+           "    |    4. Modifica  ");
+    for (f=0 ; f<36 ; f++) {
+        printf("%c", 178);
+    }
+    printf("                |\n"
+           "    |    5. Baja de e|                                    |               |\n"
+           "    |    6. Listar em|   No hay empleados en el sistema   |               |\n"
+           "    |    7. Ordenar e|____________________________________|               |\n"
+           "    |_____________________________________________________________________|\n"
+           "    |                                                                     |\n"
+           "    |    8. Guardar empleados en el archivo data.csv (modo texto)         |\n"
+           "    |    9. Guardar empleados en el archivo data.bin (modo binario)       |\n"
+           "    |_____________________________________________________________________|\n"
+           "    |                                                                     |\n"
+           "    |    10. Salir                                                        |\n"
+           "    |_____________________________________________________________________|\n\n");
+}
+
+void c_primeroCargueUnArchivo() {
+        short f;
+    system("cls");
+    renglon(); renglon();
+    printf("     _____________________________________________________________________\n"
+           "    |                                                                     |\n"
+           "    |    1. Cargar desde el archivo data.csv (modo texto)                 |\n"
+           "    |    2. Cargar desde el archivo data.bin (modo binario)               |\n"
+           "    |_____________________________________________________________________|\n"
+           "    |                                                                     |\n"
+           "    |    3. Alta de empleado                                              |\n"
+           "    |    4. Mod ");
+    for (f=0 ; f<49 ; f++) {
+        printf("%c", 178);
+    }
+    printf("         |\n"
+           "    |    5. Baj|                                                 |        |\n"
+           "    |    6. Lim|   No se puede calcular ID                       |        |\n"
+           "    |    7. Ord|   Por favor, cargue la lista desde un archivo   |        |\n"
+           "    |__________|_________________________________________________|________|\n"
+           "    |                                                                     |\n"
+           "    |    8. Guardar empleados en el archivo data.csv (modo texto)         |\n"
+           "    |    9. Guardar empleados en el archivo data.bin (modo binario)       |\n"
+           "    |_____________________________________________________________________|\n"
+           "    |                                                                     |\n"
+           "    |    10. Salir                                                        |\n"
+           "    |_____________________________________________________________________|\n\n");
+}
+
+void c_listaCargada(amount) {
+    short f;
+    system("cls");
+    renglon(); renglon();
+    printf("     _____________________________________________________________________\n"
+           "    |                                                                     |\n"
+           "    |    1. Cargar desde el archivo data.csv (modo texto)                 |\n"
+           "    |    2. Cargar desde el archivo data.bin (modo binario)               |\n"
+           "    |_____________________________________________________________________|\n"
+           "    |                                                                     |\n"
+           "    |    3. Alta de empleado                                              |\n"
+           "    |    4. Modificar  ");
+    for (f=0 ; f<33 ; f++) {
+        printf("%c", 178);
+    }
+    printf("                  |\n"
+           "    |    5. Baja de em|                                 |                 |\n"
+           "    |    6. Listar emp|   Archivo cargado               |                 |\n"
+           "    |    7. Ordenar em|   Se encontraron %d empleados   |                 |\n"
+           "    |_________________|_________________________________|_________________|\n"
+           "    |                                                                     |\n"
+           "    |    8. Guardar empleados en el archivo data.csv (modo texto)         |\n"
+           "    |    9. Guardar empleados en el archivo data.bin (modo binario)       |\n"
+           "    |_____________________________________________________________________|\n"
+           "    |                                                                     |\n"
+           "    |    10. Salir                                                        |\n"
+           "    |_____________________________________________________________________|\n\n", amount);
 }

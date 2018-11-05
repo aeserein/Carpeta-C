@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 void pausaYClear(void) {
-    printf("\n");
+    printf("\n    ");
     system("pause");
     system("cls");
 }
@@ -12,7 +12,7 @@ void pausaYClear(void) {
 unsigned short pregunta(char texto[50]) {
     char letra;
     do {
-        printf("%c%s" , 168, texto);
+        printf("    %c%s" , 168, texto);
         letra = getche();
         letra = toupper(letra);
     } while (letra!='S' && letra!='N');
