@@ -2,6 +2,7 @@
 #define CONTROLLER_H_INCLUDED
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 #include "../LinkedList.h"
 #include "parser.h"
 #include "Employee.h"
@@ -41,6 +42,7 @@ void c_nombreModificado(void);
 void c_horasModificado(void);
 void c_salarioModificado(void);
 void c_altaDeEmpleado(void);
+void c_empleadoDadoDeAlta(void);
 void c_noHayEmpleadosEnElSistema(void);
 void c_primeroCargueUnArchivo(void);
 void c_listaCargada(int amount);

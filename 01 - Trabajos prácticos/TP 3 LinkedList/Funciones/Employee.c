@@ -111,10 +111,10 @@ int employee_print(Employee *puntero) {
     int debug = 0;
     if (puntero!=NULL) {
 
-        printf("   ID:\t%d\t", puntero->id);
-        printf("NOMBRE:\t%.7s\t\t", puntero->nombre);
-        printf("HORAS:\t%d\t\t", puntero->horasTrabajadas);
-        printf("SUELDO:\t%d\n", puntero->sueldo);
+        printf("    |  %5d  |", puntero->id);
+        printf("  %25s  |", puntero->nombre);
+        printf("  %8d  |", puntero->horasTrabajadas);
+        printf("  $%11d  |\n", puntero->sueldo);
 
         debug = 1;
     }

@@ -59,8 +59,8 @@ int programa(void) {
                     //printf("\nTEST - addEmployee: %d\n", debug);
                 } else {
                     c_primeroCargueUnArchivo();
+                    pausaYClear();
                 }
-                pausaYClear();
                 break;
             }
             case 4 : { // Modificar datos de empleado
@@ -84,6 +84,7 @@ int programa(void) {
             }
             case 6 : { // Listar empleados
                 if ( !ll_isEmpty(listaEmpleados) ) {
+                    debug = ll_sort(listaEmpleados, sortByID, 1);
                     debug = controller_ListEmployee(listaEmpleados);
                     //printf("\nTEST - ListEmployee: %d\n", debug);
                 } else {

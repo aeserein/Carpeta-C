@@ -59,12 +59,15 @@ int controller_addEmployee(LinkedList* pArrayListEmployee) {
            "                          ________\n\n", id);
     getString(name, "                          Nombre:\t", NOMBRE);
     primerasLetrasMayusculas(name);
-    hours = getInt("                          Carga horaria:\t");
+    hours = getInt("                          Horas:\t");
     salary = getInt("                          Salario:\t");
 
     newEmployee = employee_newParametros(&id, name, &hours, &salary);
     ll_add(pArrayListEmployee, newEmployee);
 
+    c_empleadoDadoDeAlta();
+    getch();
+    system("cls");
     return 1;
 }
 
@@ -79,10 +82,9 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee) {
     Employee *auxEmployee;
     int len = ll_len(pArrayListEmployee);
     int f;
-
-    ll_sort(pArrayListEmployee, sortByID, 1);
     system("cls");
     //printf("LEN: %d\n", len);
+    list_header();
     for(f=0; f<len; f++) {
 
         auxEmployee = (Employee*)ll_get(pArrayListEmployee, f);
@@ -90,6 +92,7 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee) {
             employee_print(auxEmployee);
         }
     }
+    list_end();
     return len;
 }
 
@@ -211,6 +214,8 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee) {
             break;
         }
     }
+    system("cls");
+    controller_ListEmployee(pArrayListEmployee);
     return debug;
 }
 
@@ -542,6 +547,15 @@ void c_altaDeEmpleado() {
     printf("                          |_____________________|\n\n\n");
 }
 
+void c_empleadoDadoDeAlta(){
+    renglon(); renglon();
+    printf("                                                            /\n");
+    printf("                         _________________________         /\n");
+    printf("                        |                         |       /\n");
+    printf("                        |  Empleado dado de alta  |   %c  /\n", 92);
+    printf("                        |_________________________|    %c/  ", 92);
+}
+
 void c_noHayEmpleadosEnElSistema() {
     short f;
     system("cls");
@@ -600,7 +614,7 @@ void c_primeroCargueUnArchivo() {
            "    |_____________________________________________________________________|\n\n");
 }
 
-void c_listaCargada(amount) {
+void c_listaCargada(int amount) {
     short f;
     system("cls");
     renglon(); renglon();
@@ -627,4 +641,17 @@ void c_listaCargada(amount) {
            "    |                                                                     |\n"
            "    |    10. Salir                                                        |\n"
            "    |_____________________________________________________________________|\n\n", amount);
+}
+
+void list_header() {
+    renglon();
+    printf("     _____________________________________________________________________\n"
+           "    |         |                             |            |                |\n"
+           "    |     ID  |                     Nombre  |     Horas  |       Salario  |\n"
+           "    |_________|_____________________________|____________|________________|\n"
+           "    |         |                             |            |                |\n");
+}
+
+void list_end() {
+    printf("    |_________|_____________________________|____________|________________|\n\n");
 }
