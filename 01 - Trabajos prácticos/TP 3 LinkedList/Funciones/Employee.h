@@ -38,5 +38,7 @@ int employee_getSueldo(Employee* this);
 /////////////////////////////////////////////////////////////////////////////////////
 
 int employee_print(Employee *puntero);
+void employee_printFromStack(int *id, char *name, int *hours, int *salary);
+int employee_DEBUG_printMemory(Employee *puntero);
 
 #endif // employee_H_INCLUDED

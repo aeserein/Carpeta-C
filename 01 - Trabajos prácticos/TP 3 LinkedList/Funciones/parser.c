@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "../LinkedList.h"
-#include "Employee.h"
+#include "parser.h"
 
 /** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
  *
@@ -12,7 +9,28 @@
  */
 int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee) {
 
-    return 1;
+    char id[6], name[NOMBRE], hours[10], salary[20];
+    int idAux;
+    int hoursAux;
+    int salaryAux;
+    int count = 0;
+
+    while( !feof(pFile) ) {
+        fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", id, name, hours, salary);
+        //printf("STRINGS\tID: %s \tNOMBRE: %10s\tHORAS: %s\tSALARIO: %s\n", id, name, hours, salary);
+
+        idAux = atoi(id);
+        hoursAux = atoi(hours);
+        salaryAux = atoi(salary);
+        //printf("AUX\tID: %d \tNOMBRE: %10s\tHORAS: %d\tSALARIO: %d\n\n", idAux, name, hoursAux, salaryAux);
+
+        Employee* aNewEmployee = employee_newParametros(&idAux, name, &hoursAux, &salaryAux);
+        ll_add(pArrayListEmployee, aNewEmployee);
+
+        count++;
+    }
+
+    return count;
 }
 
 /** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo binario).
@@ -22,8 +40,18 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee) {
  * \return int
  *
  */
-int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
-{
+int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee) {
+    int count = 0;
 
-    return 1;
+    while( !feof(pFile) ) {
+        Employee* aNewEmployee = employee_new();
+        fread(aNewEmployee,
+              sizeof(Employee),
+              1,
+              pFile);
+        ll_add(pArrayListEmployee, aNewEmployee);
+        count++;
+    }
+
+    return count;
 }

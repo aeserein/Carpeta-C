@@ -29,7 +29,7 @@ int employee_delete(Employee *puntero) {
     return debug;
 }
 
-/////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 
 int employee_setId(Employee* this, int id) {
     int debug = 0;
@@ -121,14 +121,21 @@ int employee_print(Employee *puntero) {
     return debug;
 }
 
+void employee_printFromStack(int *id, char *name, int *hours, int *salary) {
+    printf("   ID:\t%d\t", *id);
+    printf("NOMBRE:\t%.7s\t\t", name);
+    printf("HORAS:\t%d\t\t", *hours);
+    printf("SUELDO:\t%d\n", *salary);
+}
+
 int employee_DEBUG_printMemory(Employee *puntero) {
     int debug = 0;
     if (puntero!=NULL) {
 
-        printf("   &:\t%d\t", &(puntero->id));
-        printf("&:\t%d\t\t", &(puntero->nombre));
-        printf("&:\t%d\t\t", &(puntero->horasTrabajadas));
-        printf("&:\t%d\n\n", &(puntero->sueldo));
+        printf("   &:\t%p\t", &(puntero->id));
+        printf("&:\t%p\t\t", &(puntero->nombre));
+        printf("&:\t%p\t\t", &(puntero->horasTrabajadas));
+        printf("&:\t%p\n\n", &(puntero->sueldo));
 
         debug = 1;
     }

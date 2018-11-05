@@ -29,18 +29,18 @@ typedef struct {
 } LinkedList;
 
 //Publicas
-LinkedList* ll_newLinkedList(void);    ///Crear lista
-int ll_len(LinkedList* this);    ///Contar elementos en la lista
+LinkedList* ll_newLinkedList(void);    //Crear lista
+int ll_len(LinkedList* this);    //Contar elementos en la lista
 Node* test_getNode(LinkedList* this, int nodeIndex);
 int test_addNode(LinkedList* this, int nodeIndex,void* pElement);
-int ll_add(LinkedList* this, void* pElement);    ///Agregar elemento
-void* ll_get(LinkedList* this, int index);    ///Tomar elemento
-int ll_set(LinkedList* this, int index,void* pElement);    ///????
-int ll_remove(LinkedList* this,int index);    ///Remover elemento
+int ll_add(LinkedList* this, void* pElement);    //Agregar elemento
+void* ll_get(LinkedList* this, int index);    //Tomar elemento
+int ll_set(LinkedList* this, int index, void* pElement);    ///????
+int ll_remove(LinkedList* this,int index);    //Remover elemento
 int ll_clear(LinkedList* this);    ///Limpiar todos los slots
 int ll_deleteLinkedList(LinkedList* this);    ///Eliminar lista
-int ll_indexOf(LinkedList* this, void* pElement);    ///Sacar índice de un elemento
-int ll_isEmpty(LinkedList* this);    ///Ver si lista está vacía
+int ll_indexOf(LinkedList* this, void* pElement);    /****************************** Sacar índice de un elemento */
+int ll_isEmpty(LinkedList* this);    //Ver si lista está vacía
 int ll_push(LinkedList* this, int index, void* pElement);    ///????
 void* ll_pop(LinkedList* this,int index);    ///????
 int ll_contains(LinkedList* this, void* pElement);    ///????

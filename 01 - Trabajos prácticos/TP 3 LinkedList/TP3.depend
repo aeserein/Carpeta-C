@@ -53,22 +53,20 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1541032675 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.c
-	<stdio.h>
-	<stdlib.h>
+1541381941 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.c
 	"Controller.h"
 
 1540935447 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\linkedlist.h
 
-1541029190 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.h
+1541304253 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1541032796 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.c
+1541304276 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.c
 	"Employee.h"
 
-1540933975 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.c
+1541294408 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -82,20 +80,17 @@
 	<conio.h>
 	<ctype.h>
 
-1540939517 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.c
-	<stdio.h>
-	<stdlib.h>
-	"../LinkedList.h"
-	"Employee.h"
+1541381755 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.c
+	"parser.h"
 
-1540936739 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.c
+1541294960 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"strings.h"
 
-1540935955 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\main.c
+1541379172 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\main.c
 	"programa.h"
 
 1540937604 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\programa.h
@@ -108,22 +103,31 @@
 	"Funciones/ingresos.h"
 	"Funciones/flow.h"
 
-1540938879 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.h
+1541382099 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.h
 	<stdio.h>
 	<stdlib.h>
 	"../LinkedList.h"
+	"parser.h"
 	"Employee.h"
+	"ingresos.h"
+	"strings.h"
+	"flow.h"
 
-1540933976 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.h
+1541288726 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../LinkedList.h"
+	"Employee.h"
 
 1540933975 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.h
 
 1540935491 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\flow.h
 
-1541031678 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\programa.c
+1541382112 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\programa.c
 	"programa.h"
 
-1540942989 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\linkedlist.h
+1541382046 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\linkedlist.h
 
 1541252251 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.c
 	<stdio.h>

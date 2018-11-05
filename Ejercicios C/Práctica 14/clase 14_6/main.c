@@ -12,6 +12,7 @@ int main() {
     persona unaPersona = {"Pepe el Mediocre", 20};
     persona personaLeidaDeArchivo;
     int y;
+    long asd;
 
     pArchivo = fopen("persona.dat", "wb");
     if (pArchivo!=NULL) {
@@ -24,6 +25,8 @@ int main() {
     }
 
     pArchivo = fopen ("persona.dat", "rb");
+    asd = ftell(pArchivo);
+    printf("%li", asd);
     if (pArchivo!=NULL) {
         fread(&personaLeidaDeArchivo,
               sizeof(persona),

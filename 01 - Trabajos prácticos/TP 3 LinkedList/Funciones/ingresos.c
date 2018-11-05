@@ -25,10 +25,10 @@ float getFloatBetween(float min, float max, char texto[MENSAJES]) {
         printf("%s" , texto);
         fflush(stdin);
         gets(num);
-        if (tieneLetrasEsteString(num)) {
-            numero = min-1;
-        } else {
+        if ( !tieneLetrasEsteString(num) ) {
             numero = atof(num);
+        } else {
+            numero = min-1;
         }
     } while (numero<min || numero>max);
 
@@ -45,7 +45,7 @@ int getInt(char texto[MENSAJES]) {
         printf("%s" , texto);
         fflush(stdin);
         gets(num);
-    } while (tieneLetrasEsteString(num) && !stricmp(num, ""));
+    } while ( tieneLetrasEsteString(num) );
     numero = atoi(num);
     return numero;
 }
@@ -58,10 +58,10 @@ int getIntBetween(int min, int max, char texto[MENSAJES]) {
         printf("%s" , texto);
         fflush(stdin);
         gets(num);
-        if (tieneLetrasEsteString(num)) {
-            numero = min-1;
-        } else {
+        if ( !tieneLetrasEsteString(num) ) {
             numero = atoi(num);
+        } else {
+            numero = min-1;
         }
     } while (numero<min || numero>max);
 
@@ -78,7 +78,7 @@ short getShort(char texto[MENSAJES]) {
         printf("%s" , texto);
         fflush(stdin);
         gets(num);
-    } while (tieneLetrasEsteString(num));
+    } while ( tieneLetrasEsteString(num) );
     numero = (short)atoi(num);
     return numero;
 }
@@ -91,10 +91,10 @@ short getShortBetween(short min, short max, char texto[MENSAJES]) {
         printf("%s" , texto);
         fflush(stdin);
         gets(num);
-        if (tieneLetrasEsteString(num)) {
-            numero = min-1;
-        } else {
+        if ( !tieneLetrasEsteString(num) ) {
             numero = atoi(num);
+        } else {
+            numero = min-1;
         }
     } while (numero<min || numero>max);
 

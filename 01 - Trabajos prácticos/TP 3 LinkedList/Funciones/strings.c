@@ -6,7 +6,7 @@
 
 void getString(char *vec, const char *mensaje, int len) {
     char aux[len];
-    printf("%s", *mensaje);
+    printf("%s", mensaje);
     fflush(stdin);
     gets(aux);
     while(strlen(aux)>len || strlen(aux)<0) {
@@ -71,11 +71,16 @@ void ordenarEstosStrings(char strings[][50], int columnas) {
 
 short tieneLetrasEsteString(char string[]) {
     short f;
+    short tiene = -1;
+    int len = strlen(string);
 
-    for (f=0 ; f<strlen(string) ; f++) {
-        if (!isdigit(string[f]) && string[f]!='.') {
-            return 1;
+    if (len>0) {
+        tiene = 0;
+        for (f=0 ; f<len ; f++) {
+            if (!isdigit(string[f]) && string[f]!='.') {
+                tiene = 1;
+            }
         }
     }
-    return 0;
+    return tiene;
 }

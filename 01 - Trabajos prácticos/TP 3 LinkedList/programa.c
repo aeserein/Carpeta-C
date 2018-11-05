@@ -20,19 +20,6 @@ int programa(void) {
     int option;
 
     LinkedList* listaEmpleados = ll_newLinkedList();
-    /*
-    Employee eUno = {1,"PRIMERO",11,1111};
-    Employee eDos = {2,"SEGUNDO",22,2222};
-    Employee eTres = {3,"TERCERO",33,3333};
-    Employee eCuatro = {4,"CUARTO",44,4444};
-    Employee eCinco = {5,"QUINTO",55,5555};
-
-    debug = ll_add(listaEmpleados, &eUno);
-    debug = ll_add(listaEmpleados, &eDos);
-    debug = ll_add(listaEmpleados, &eTres);
-    debug = ll_add(listaEmpleados, &eCuatro);
-    debug = ll_add(listaEmpleados, &eCinco);
-    */
 
     do{
         menu();
@@ -40,35 +27,76 @@ int programa(void) {
         option = getIntBetween(1, 10, "Ingrese opcion:\t");
 
         switch(option) {
-            case 1 : { /// Cargar desde el archivo data.csv (modo texto)
+            case 1 : { // Cargar desde el archivo data.csv (modo texto)
                 debug = controller_loadFromText("data.csv", listaEmpleados);
-                printf("TEST - loadFromText: %d\n", debug);
+                printf("\nTEST - loadFromText: %d\n", debug);
                 pausaYClear();
                 break;
             }
-            case 2 : { /// Cargar desde el archivo data.csv (modo binario)
-                debug = controller_loadFromBinary("data.csv", listaEmpleados);
-                printf("TEST - loadFromBinary: %d\n", debug);
+            case 2 : { // Cargar desde el archivo data.csv (modo binario)
+                debug = controller_loadFromBinary("data.bin", listaEmpleados);
+                printf("\nTEST - loadFromBinary: %d\n", debug);
                 pausaYClear();
                 break;
             }
-            case 3 : { /// Alta de empleado
-            }
-            case 4 : { /// Modificar datos de empleado
-            }
-            case 5 : { /// Baja de empleado
-            }
-            case 6 : { /// Listar empleados
-                debug = controller_ListEmployee(listaEmpleados);
-                printf("TEST - ListEmployee: %d\n", debug);
+            case 3 : { // Alta de empleado
+                debug = controller_addEmployee(listaEmpleados);
+                printf("\nTEST - addEmployee: %d\n", debug);
                 pausaYClear();
                 break;
             }
-            case 7 : { /// Ordenar empleados
+            case 4 : { // Modificar datos de empleado
+                if ( !ll_isEmpty(listaEmpleados) ) {
+                    debug = controller_editEmployee(listaEmpleados);
+                } else {
+                    printf("No hay empleados en el sistema\n");
+                }
+                pausaYClear();
+                break;
+            }
+            case 5 : { // Baja de empleado
+                debug = controller_removeEmployee(listaEmpleados);
+                printf("\nTEST - removeEmployee: %d\n", debug);
+                pausaYClear();
+                break;
+            }
+            case 6 : { // Listar empleados
+                if ( !ll_isEmpty(listaEmpleados) ) {
+                    debug = controller_ListEmployee(listaEmpleados);
+                } else {
+                    printf("No hay empleados en el sistema\n");
+                }
+                pausaYClear();
+                break;
+            }
+            case 7 : { // Ordenar empleados
+                if ( !ll_isEmpty(listaEmpleados) ) {
+                    debug = controller_sortEmployee(listaEmpleados);
+                } else {
+                    printf("No hay empleados en el sistema\n");
+                }
+                pausaYClear();
+                break;
             }
             case 8 : { /// Guardar empleados en el archivo data.csv (modo texto)
+                if ( !ll_isEmpty(listaEmpleados) ) {
+                    debug = controller_saveAsText("data.csv", listaEmpleados);
+                } else {
+                    printf("No hay empleados en el sistema\n");
+                }
+                pausaYClear();
+                break;
             }
             case 9 : { /// Guardar empleados en el archivo data.csv (modo binario)
+                if ( !ll_isEmpty(listaEmpleados) ) {
+                    debug = controller_saveAsBinary("data.bin", listaEmpleados);
+                    printf("\nTEST - saveAsBinary: %d\n", debug);
+
+                } else {
+                    printf("No hay empleados en el sistema\n");
+                }
+                pausaYClear();
+                break;
             }
         }
     }while(option != 10);
@@ -79,6 +107,24 @@ int programa(void) {
 
 
 /** Preguntas
-    controller_loadFromText
-            El empleado auxiliar hay que crearlo en memoria din�mica?
+    sort
+        ¿Debo mostrar cuando ordeno?
+
+    archivos
+        ¿Dos versiones distintas o una versión sola y que se pise cada vez que guardo?
+
+    int ll_clear(LinkedList* this);    ///Limpiar todos los slots
+        ¿Para qué?
+
+    int ll_indexOf(LinkedList* this, void* pElement);
+        ¿Para qué, si el usuario me da el ID
+        y yo tengo que sacar un índice a partir del ID y no a partir del elemento
+
+    Empleado 0, "", 0, 0 desde binario
+
+    Diferencia entre pop y remove
+
+    Preguntar para qué son las funciones que faltan
+
+    Preguntar si las funciones que parecen no tener uso son para el parcial y no para este trabajo
 */
