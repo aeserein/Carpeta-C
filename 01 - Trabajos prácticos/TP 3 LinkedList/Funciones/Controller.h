@@ -47,4 +47,6 @@ void c_noHayEmpleadosEnElSistema(void);
 void c_primeroCargueUnArchivo(void);
 void c_listaCargada(int amount);
 
+void printEditMenu(void);
+
 #endif // CONTROLLER_H_INCLUDED

@@ -121,11 +121,30 @@ int employee_print(Employee *puntero) {
     return debug;
 }
 
+int employee_printOne(Employee *puntero) {
+    int debug = 0;
+    if (puntero!=NULL) {
+
+        list_header();
+        printf("    |  %5d  |", puntero->id);
+        printf("  %25s  |", puntero->nombre);
+        printf("  %8d  |", puntero->horasTrabajadas);
+        printf("  $%11d  |\n", puntero->sueldo);
+        list_end();
+
+        debug = 1;
+    }
+    return debug;
+}
+
 void employee_printFromStack(int *id, char *name, int *hours, int *salary) {
-    printf("   ID:\t%d\t", *id);
-    printf("NOMBRE:\t%.7s\t\t", name);
-    printf("HORAS:\t%d\t\t", *hours);
-    printf("SUELDO:\t%d\n", *salary);
+
+    list_header();
+    printf("    |  %5d  |", *id);
+    printf("  %25s  |", name);
+    printf("  %8d  |", *hours);
+    printf("  $%11d  |\n", *salary);
+    list_end();
 }
 
 int employee_DEBUG_printMemory(Employee *puntero) {
@@ -140,4 +159,17 @@ int employee_DEBUG_printMemory(Employee *puntero) {
         debug = 1;
     }
     return debug;
+}
+
+void list_header() {
+    renglon();
+    printf("     _____________________________________________________________________\n"
+           "    |         |                             |            |                |\n"
+           "    |     ID  |                     Nombre  |     Horas  |       Salario  |\n"
+           "    |_________|_____________________________|____________|________________|\n"
+           "    |         |                             |            |                |\n");
+}
+
+void list_end() {
+    printf("    |_________|_____________________________|____________|________________|\n\n");
 }

@@ -112,13 +112,15 @@ int controller_editEmployee(LinkedList* pArrayListEmployee) {
     renglon();
     debug = controller_ListEmployee(pArrayListEmployee);
     renglon();
-    id = getInt("Ingrese ID:\t");
+    id = getInt("    Ingrese ID:\t");
     index = indexFromID(pArrayListEmployee, &id);
 
     if (index>=0) {
         editMenu(pArrayListEmployee, index);
     } else {
+        system("cls");
         c_noSeEncontroEmpleado();
+        pausaYClear();
     }
 
     return debug;
@@ -141,21 +143,24 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee) {
     renglon();
     debug = controller_ListEmployee(pArrayListEmployee);
     renglon();
-    id = getInt("Ingrese ID:\t");
+    id = getInt("    Ingrese ID:\t");
     index = indexFromID(pArrayListEmployee, &id);
+    system("cls");
 
     if (index>=0) {
         auxEmployee = (Employee*)ll_get(pArrayListEmployee, index);
         if (auxEmployee!=NULL) {
-            system("cls");
-            employee_print(auxEmployee);
+            employee_printOne(auxEmployee);
             if ( pregunta("Dar de baja? S/N\t") ) {
                 debug = ll_remove(pArrayListEmployee, index);
                 c_empleadoDadoDeBaja();
             }
+            getch();
+            system("cls");
         }
     } else {
         c_noSeEncontroEmpleado();
+        pausaYClear();
     }
 
     return debug;
@@ -329,8 +334,9 @@ int getAvailableID(LinkedList *pArrayListEmployee) {
 int edit_name(Employee *auxEmployee) {
     char name[NOMBRE];
     int debug = 0;
-    getString(name, "    Nuevo nombre:\t", NOMBRE);
+    getString(name, "\n                     Nuevo nombre:\t", NOMBRE);
     primerasLetrasMayusculas(name);
+    system("cls");
     employee_printFromStack(&(auxEmployee->id),
                             name,
                             &(auxEmployee->horasTrabajadas),
@@ -339,9 +345,11 @@ int edit_name(Employee *auxEmployee) {
     if ( pregunta("Esta seguro? S/N\t") ) {
         system("cls");
         employee_setNombre(auxEmployee, name);
-        employee_print(auxEmployee);
+        employee_printOne(auxEmployee);
         c_nombreModificado();
         debug = 1;
+        getch();
+        system("cls");
     }
     return debug;
 }
@@ -349,7 +357,8 @@ int edit_name(Employee *auxEmployee) {
 int edit_hours(Employee *auxEmployee) {
     int hours;
     int debug = 0;
-    hours = getInt("Nueva carga horaria:  ");
+    hours = getInt("\n                     Nueva carga horaria:  ");
+    system("cls");
     employee_printFromStack(&(auxEmployee->id),
                             auxEmployee->nombre,
                             &hours,
@@ -358,9 +367,11 @@ int edit_hours(Employee *auxEmployee) {
     if ( pregunta("Esta seguro? S/N\t") ) {
         system("cls");
         employee_setHorasTrabajadas(auxEmployee, hours);
-        employee_print(auxEmployee);
+        employee_printOne(auxEmployee);
         c_horasModificado();
         debug = 1;
+        getch();
+        system("cls");
     }
     return debug;
 }
@@ -368,7 +379,8 @@ int edit_hours(Employee *auxEmployee) {
 int edit_salary(Employee *auxEmployee) {
     int salary;
     int debug = 0;
-    salary = getInt("Nuevo salario:\t");
+    salary = getInt("\n                     Nuevo salario:\t");
+    system("cls");
     employee_printFromStack(&(auxEmployee->id),
                             auxEmployee->nombre,
                             &(auxEmployee->horasTrabajadas),
@@ -377,9 +389,11 @@ int edit_salary(Employee *auxEmployee) {
     if ( pregunta("Esta seguro? S/N\t") ) {
         system("cls");
         debug = employee_setSueldo(auxEmployee, salary);
-        employee_print(auxEmployee);
+        employee_printOne(auxEmployee);
         c_salarioModificado();
         debug = 1;
+        getch();
+        system("cls");
     }
     return debug;
 }
@@ -392,13 +406,9 @@ int editMenu(LinkedList *pArrayListEmployee, int index) {
 
     if (auxEmployee!=NULL) {
         system("cls");
-        employee_print(auxEmployee);
-        printf("1. Nombre\n"
-               "2. Horas\n"
-               "3. Salario\n"
-               "   --------------\n"
-               "4. Atr%cs\n\n", 160);
-        option = getShortBetween(1, 4, "Ingrese opcion:\t");
+        employee_printOne(auxEmployee);
+        printEditMenu();
+        option = getShortBetween(1, 4, "                     Ingrese opcion:\t");
 
         switch (option) {
             case 1 : { /// Nombre
@@ -412,6 +422,9 @@ int editMenu(LinkedList *pArrayListEmployee, int index) {
             case 3 : { /// Salario
                 debug = edit_salary(auxEmployee);
                 break;
+            }
+            case 4 : { /// Atrás
+                system("cls");
             }
         }
     }
@@ -497,46 +510,47 @@ int askForOrder() {
 }
 
 void c_empleadoDadoDeBaja(){
-    printf("\n                                    /");
-    printf("\n _________________________         /");
-    printf("\n|                         |       /");
-    printf("\n|  Empleado dado de baja  |   %c  /", 92);
-    printf("\n|_________________________|    %c/", 92);
+    renglon();
+    printf("                                                            /\n");
+    printf("                         _________________________         /\n");
+    printf("                        |                         |       /\n");
+    printf("                        |  Empleado dado de baja  |   %c  /\n", 92);
+    printf("                        |_________________________|    %c/  ", 92);
 }
 
 void c_noSeEncontroEmpleado() {
-    printf("\n\n");
-    printf("\n ____________________________");
-    printf("\n|                            |");
-    printf("\n|  No se encontr%c empleado   |", 162);
-    printf("\n|____________________________|");
+    renglon(); renglon();
+    printf("                       ____________________________\n");
+    printf("                      |                            |\n");
+    printf("                      |  No se encontr%c empleado   |\n", 162);
+    printf("                      |____________________________|\n\n");
 }
 
 void c_nombreModificado() {
     renglon();
-    printf("                                  /\n");
-    printf(" _______________________         /\n");
-    printf("|                       |       /\n");
-    printf("|   Nombre modificado   |   %c  /\n", 92);
-    printf("|_______________________|    %c/", 92);
+    printf("                                                           /\n");
+    printf("                          _______________________         /\n");
+    printf("                         |                       |       /\n");
+    printf("                         |   Nombre modificado   |   %c  /\n", 92);
+    printf("                         |_______________________|    %c/", 92);
 }
 
 void c_horasModificado() {
     renglon();
-    printf("                                         /\n");
-    printf(" ______________________________         /\n");
-    printf("|                              |       /\n");
-    printf("|   Carga horaria modificada   |   %c  /\n", 92);
-    printf("|______________________________|    %c/", 92);
+    printf("                                                              /\n");
+    printf("                      ______________________________         /\n");
+    printf("                     |                              |       /\n");
+    printf("                     |   Carga horaria modificada   |   %c  /\n", 92);
+    printf("                     |______________________________|    %c/", 92);
 }
 
 void c_salarioModificado() {
     renglon();
-    printf("                                   /\n");
-    printf(" ________________________         /\n");
-    printf("|                        |       /\n");
-    printf("|   Salario modificado   |   %c  /\n", 92);
-    printf("|________________________|    %c/", 92);
+    printf("                                                           /\n");
+    printf("                         ________________________         /\n");
+    printf("                        |                        |       /\n");
+    printf("                        |   Salario modificado   |   %c  /\n", 92);
+    printf("                        |________________________|    %c/", 92);
 }
 
 void c_altaDeEmpleado() {
@@ -643,15 +657,15 @@ void c_listaCargada(int amount) {
            "    |_____________________________________________________________________|\n\n", amount);
 }
 
-void list_header() {
+void printEditMenu() {
     renglon();
-    printf("     _____________________________________________________________________\n"
-           "    |         |                             |            |                |\n"
-           "    |     ID  |                     Nombre  |     Horas  |       Salario  |\n"
-           "    |_________|_____________________________|____________|________________|\n"
-           "    |         |                             |            |                |\n");
-}
-
-void list_end() {
-    printf("    |_________|_____________________________|____________|________________|\n\n");
+    printf("                      __________________________________\n"
+           "                     |                                  |\n"
+           "                     |    1. Nombre                     |\n"
+           "                     |    2. Horas                      |\n"
+           "                     |    3. Salario                    |\n"
+           "                     |__________________________________|\n"
+           "                     |                                  |\n"
+           "                     |    4. Atr%cs                      |\n"
+           "                     |__________________________________|\n\n", 160);
 }

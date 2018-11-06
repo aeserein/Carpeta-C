@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "flow.h"
 
 typedef struct {
     int id;
@@ -37,8 +38,13 @@ int employee_getSueldo(Employee* this);
 
 /////////////////////////////////////////////////////////////////////////////////////
 
+
 int employee_print(Employee *puntero);
+int employee_printOne(Employee *puntero);
 void employee_printFromStack(int *id, char *name, int *hours, int *salary);
 int employee_DEBUG_printMemory(Employee *puntero);
+
+void list_header(void);
+void list_end(void);
 
 #endif // employee_H_INCLUDED

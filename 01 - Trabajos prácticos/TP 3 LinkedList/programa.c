@@ -68,8 +68,8 @@ int programa(void) {
                     debug = controller_editEmployee(listaEmpleados);
                 } else {
                     c_noHayEmpleadosEnElSistema();
+                    pausaYClear();
                 }
-                pausaYClear();
                 break;
             }
             case 5 : { // Baja de empleado
@@ -78,8 +78,8 @@ int programa(void) {
                     //printf("\nTEST - removeEmployee: %d\n", debug);
                 } else {
                     c_noHayEmpleadosEnElSistema();
+                    pausaYClear();
                 }
-                pausaYClear();
                 break;
             }
             case 6 : { // Listar empleados
@@ -133,8 +133,6 @@ int programa(void) {
 
 /** Preguntas
 
-    ¿Entrar a opcion 3 solo si ya tengo los empleados cargados?
-
     Diferencia entre pop y remove
 
 */
@@ -142,5 +140,7 @@ int programa(void) {
 /** HACER
 
     paginado
+
+    preguntar cuando sale si quiere guardar en archivo si no guardo anteriormente
 
 */
