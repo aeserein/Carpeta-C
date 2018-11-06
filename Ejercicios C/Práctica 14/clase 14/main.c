@@ -33,7 +33,10 @@ int main() {
  *  Archivo de texto es .txt
     Archivo de bits puede ser cualquier cosa, pero se pone .bin o .dat
 
+ *  sprintf(_______________________________?); para pasar a un string
  *  fprintf(puntero al archivo, "texto"); para archivo de texto
+
+ *  fscanf(________________________________?);
 
  *  fwrite(puntero al dato que va a escribir,
            sizeof(dato),

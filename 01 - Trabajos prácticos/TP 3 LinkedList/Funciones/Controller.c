@@ -179,21 +179,16 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee) {
     int debug = 0;
     system("cls");
 
-    printf("   Ordenar\n"
-           "   ---------------\n"
-           "1. Por ID\n"
-           "2. Por nombre\n"
-           "3. Por carga horaria\n"
-           "4. Por salario\n"
-           "   ---------------\n"
-           "5. Atr%cs\n\n", 160);
-    option = getShortBetween(1, 5, "Ingrese opcion:\t");
+    printSortMenu();
+    option = getShortBetween(1, 5, "                     Ingrese opcion:\t");
 
     switch (option) {
         case 1 : {
             order = askForOrder();
             if (order>=0) {
                 debug = ll_sort(pArrayListEmployee, sortByID, order);
+                controller_ListEmployee(pArrayListEmployee);
+                pausaYClear();
             }
             break;
         }
@@ -201,6 +196,8 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee) {
             order = askForOrder();
             if (order>=0) {
                 debug = ll_sort(pArrayListEmployee, sortByName, order);
+                controller_ListEmployee(pArrayListEmployee);
+                pausaYClear();
             }
             break;
         }
@@ -208,6 +205,8 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee) {
             order = askForOrder();
             if (order>=0) {
                 debug = ll_sort(pArrayListEmployee, sortByHours, order);
+                controller_ListEmployee(pArrayListEmployee);
+                pausaYClear();
             }
             break;
         }
@@ -215,12 +214,13 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee) {
             order = askForOrder();
             if (order>=0) {
                 debug = ll_sort(pArrayListEmployee, sortBySalario, order);
+                controller_ListEmployee(pArrayListEmployee);
+                pausaYClear();
             }
             break;
         }
     }
     system("cls");
-    controller_ListEmployee(pArrayListEmployee);
     return debug;
 }
 
@@ -490,13 +490,8 @@ int askForOrder() {
     short option;
 
     system("cls");
-    printf("   Orden\n\n"
-           "   ------------------\n"
-           "1. Ascendente\n"
-           "2. Descendente\n"
-           "   ------------------\n"
-           "3. Atr%cs", 160);
-    option = getShortBetween(1, 3, "Escoja orden:\t");
+    printOrderMenu();
+    option = getShortBetween(1, 3, "                     Escoja orden:\t");
     switch (option) {
         case 2 : {
             option = 0;
@@ -667,5 +662,31 @@ void printEditMenu() {
            "                     |__________________________________|\n"
            "                     |                                  |\n"
            "                     |    4. Atr%cs                      |\n"
+           "                     |__________________________________|\n\n", 160);
+}
+
+void printSortMenu() {
+    renglon();
+    printf("                      __________________________________\n"
+           "                     |                                  |\n"
+           "                     |    1. ID                         |\n"
+           "                     |    2. Nombre                     |\n"
+           "                     |    3. Horas                      |\n"
+           "                     |    4. Salario                    |\n"
+           "                     |__________________________________|\n"
+           "                     |                                  |\n"
+           "                     |    5. Atr%cs                      |\n"
+           "                     |__________________________________|\n\n", 160);
+}
+
+void printOrderMenu() {
+    renglon();
+    printf("                      __________________________________\n"
+           "                     |                                  |\n"
+           "                     |    1. Ascendente                 |\n"
+           "                     |    2. Descendente                |\n"
+           "                     |__________________________________|\n"
+           "                     |                                  |\n"
+           "                     |    3. Atr%cs                      |\n"
            "                     |__________________________________|\n\n", 160);
 }

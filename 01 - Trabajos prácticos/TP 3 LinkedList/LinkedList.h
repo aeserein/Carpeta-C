@@ -35,18 +35,18 @@ Node* test_getNode(LinkedList* this, int nodeIndex);
 int test_addNode(LinkedList* this, int nodeIndex,void* pElement);
 int ll_add(LinkedList* this, void* pElement);    //Agregar elemento
 void* ll_get(LinkedList* this, int index);    //Tomar elemento
-int ll_set(LinkedList* this, int index, void* pElement);    ///????
+int ll_set(LinkedList* this, int index, void* pElement);    /// Pone un elemento en el índice indicado (reemplaza el que está)
 int ll_remove(LinkedList* this,int index);    //Remover elemento
-int ll_clear(LinkedList* this);    ///Limpiar todos los slots
-int ll_deleteLinkedList(LinkedList* this);    ///Eliminar lista
-int ll_indexOf(LinkedList* this, void* pElement);    /****************************** Sacar índice de un elemento */
+int ll_clear(LinkedList* this);    /// Borra todos los nodos y vuelve a la lista vacía
+int ll_deleteLinkedList(LinkedList* this);    /// Eliminar lista
+int ll_indexOf(LinkedList* this, void* pElement);    /// Sacar índice de un elemento
 int ll_isEmpty(LinkedList* this);    //Ver si lista está vacía
-int ll_push(LinkedList* this, int index, void* pElement);    ///????
-void* ll_pop(LinkedList* this,int index);    ///????
-int ll_contains(LinkedList* this, void* pElement);    ///????
-int ll_containsAll(LinkedList* this,LinkedList* this2);    ///????
-LinkedList* ll_subList(LinkedList* this,int from,int to);    ///Retirar porción de la lista
-LinkedList* ll_clone(LinkedList* this);    ///Copiar lista
-int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);    ///Ordenar
+int ll_push(LinkedList* this, int index, void* pElement);    /// Mete un elemento en el índice y corre los demás hacía atrás
+void* ll_pop(LinkedList* this,int index);    /// Saca un elemento de la lista y lo devuelve
+int ll_contains(LinkedList* this, void* pElement);    /// Busca un elemento. Devuelve 1 o 0 si lo encuentra o no
+int ll_containsAll(LinkedList* this,LinkedList* this2);    /// Busca todos los elementos de una lista en otra. Devuelve si están todos o no
+LinkedList* ll_subList(LinkedList* this,int from,int to);    /// Retirar porción de la lista
+LinkedList* ll_clone(LinkedList* this);    /// Crea una lista igual aparte
+int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);    /// Ordenar
 
 #endif

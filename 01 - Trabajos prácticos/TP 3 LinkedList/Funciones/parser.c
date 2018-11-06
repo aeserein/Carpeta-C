@@ -25,8 +25,8 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee) {
         //printf("AUX\tID: %d \tNOMBRE: %10s\tHORAS: %d\tSALARIO: %d\n\n", idAux, name, hoursAux, salaryAux);
 
         Employee* aNewEmployee = employee_newParametros(&idAux, name, &hoursAux, &salaryAux);
-        ll_add(pArrayListEmployee, aNewEmployee);
 
+        ll_add(pArrayListEmployee, aNewEmployee);
         count++;
     }
 

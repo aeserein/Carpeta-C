@@ -112,9 +112,9 @@ int employee_print(Employee *puntero) {
     if (puntero!=NULL) {
 
         printf("    |  %5d  |", puntero->id);
-        printf("  %25s  |", puntero->nombre);
+        printf("  %26s  |", puntero->nombre);
         printf("  %8d  |", puntero->horasTrabajadas);
-        printf("  $%11d  |\n", puntero->sueldo);
+        printf("  $%10d  |\n", puntero->sueldo);
 
         debug = 1;
     }
@@ -127,9 +127,9 @@ int employee_printOne(Employee *puntero) {
 
         list_header();
         printf("    |  %5d  |", puntero->id);
-        printf("  %25s  |", puntero->nombre);
+        printf("  %26s  |", puntero->nombre);
         printf("  %8d  |", puntero->horasTrabajadas);
-        printf("  $%11d  |\n", puntero->sueldo);
+        printf("  $%10d  |\n", puntero->sueldo);
         list_end();
 
         debug = 1;
@@ -141,9 +141,9 @@ void employee_printFromStack(int *id, char *name, int *hours, int *salary) {
 
     list_header();
     printf("    |  %5d  |", *id);
-    printf("  %25s  |", name);
+    printf("  %26s  |", name);
     printf("  %8d  |", *hours);
-    printf("  $%11d  |\n", *salary);
+    printf("  $%10d  |\n", *salary);
     list_end();
 }
 
@@ -164,12 +164,12 @@ int employee_DEBUG_printMemory(Employee *puntero) {
 void list_header() {
     renglon();
     printf("     _____________________________________________________________________\n"
-           "    |         |                             |            |                |\n"
-           "    |     ID  |                     Nombre  |     Horas  |       Salario  |\n"
-           "    |_________|_____________________________|____________|________________|\n"
-           "    |         |                             |            |                |\n");
+           "    |         |                              |            |               |\n"
+           "    |     ID  |                      Nombre  |     Horas  |      Salario  |\n"
+           "    |_________|______________________________|____________|_______________|\n"
+           "    |         |                              |            |               |\n");
 }
 
 void list_end() {
-    printf("    |_________|_____________________________|____________|________________|\n\n");
+    printf("    |_________|______________________________|____________|_______________|\n\n");
 }

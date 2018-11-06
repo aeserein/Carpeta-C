@@ -131,12 +131,13 @@
 
 1541382046 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\linkedlist.h
 
-1541431477 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.c
+1541516499 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.c
 	"Controller.h"
 
-1541431516 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.h
+1541504842 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.h
 	<stdio.h>
 	<stdlib.h>
+	<conio.h>
 	"../LinkedList.h"
 	"parser.h"
 	"Employee.h"
@@ -144,44 +145,45 @@
 	"strings.h"
 	"flow.h"
 
-1541417869 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\linkedlist.h
+1541511420 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\linkedlist.h
 
-1541417869 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.h
+1541504842 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	"flow.h"
 
-1541417869 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.c
+1541505300 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.c
 	"Employee.h"
 
-1541430728 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\flow.c
+1541504842 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\flow.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	<ctype.h>
 
-1541417869 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.c
+1541504842 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"strings.h"
 
-1541417869 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.h
+1541504842 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.h
 
-1541420771 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.c
+1541517891 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.c
 	"parser.h"
 
-1541430760 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.c
+1541504842 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"strings.h"
 
-1541422357 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\main.c
+1541504842 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\main.c
 	"programa.h"
 
-1541417869 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\programa.h
+1541504843 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\programa.h
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -191,17 +193,17 @@
 	"Funciones/ingresos.h"
 	"Funciones/flow.h"
 
-1541417869 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.h
+1541504842 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"../LinkedList.h"
 	"Employee.h"
 
-1541417869 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.h
+1541504842 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.h
 
-1541417869 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\flow.h
+1541504842 c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\flow.h
 
-1541431477 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\programa.c
+1541513124 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\programa.c
 	"programa.h"
 

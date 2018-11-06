@@ -38,18 +38,26 @@ int programa(void) {
 
         switch(option) {
             case 1 : { // Cargar desde el archivo data.csv (modo texto)
-                debug = controller_loadFromText("data.csv", listaEmpleados);
-                fileLoaded = 1;
-                c_listaCargada(debug);
-                //printf("\nTEST - loadFromText: %d\n", debug);
+                if (!fileLoaded) {
+                    debug = controller_loadFromText("data.csv", listaEmpleados);
+                    fileLoaded = 1;
+                    c_listaCargada(debug);
+                    //printf("\nTEST - loadFromText: %d\n", debug);
+                } else {
+                    printf("\nHACER CARTEL PARA 'YA CARGO ARCHIVO'\n");
+                }
                 pausaYClear();
                 break;
             }
             case 2 : { // Cargar desde el archivo data.bin (modo binario)
-                debug = controller_loadFromBinary("data.bin", listaEmpleados);
-                c_listaCargada(debug);
-                fileLoaded = 1;
-                //printf("\nTEST - loadFromBinary: %d\n", debug);
+                if (!fileLoaded) {
+                    debug = controller_loadFromBinary("data.bin", listaEmpleados);
+                    c_listaCargada(debug);
+                    fileLoaded = 1;
+                    //printf("\nTEST - loadFromBinary: %d\n", debug);
+                } else {
+                    printf("\nHACER CARTEL PARA 'YA CARGO ARCHIVO'\n");
+                }
                 pausaYClear();
                 break;
             }
@@ -99,8 +107,8 @@ int programa(void) {
                     //printf("\nTEST - sortEmployee: %d\n", debug);
                 } else {
                     c_noHayEmpleadosEnElSistema();
+                    pausaYClear();
                 }
-                pausaYClear();
                 break;
             }
             case 8 : { // Guardar empleados en el archivo data.csv (modo texto)
@@ -124,7 +132,7 @@ int programa(void) {
                 break;
             }
         }
-    }while(option != 10);
+    }while(option!=10);
 
     ll_deleteLinkedList(listaEmpleados);
     return debug;
@@ -142,5 +150,9 @@ int programa(void) {
     paginado
 
     preguntar cuando sale si quiere guardar en archivo si no guardo anteriormente
+
+    set para modificar
+
+    contains para chequear cuando carga de archivo
 
 */
