@@ -16,6 +16,10 @@ void pausaYClear(void);
  */
 unsigned short pregunta(char texto[50]);
 
+/** \brief  Baja el cursor una línea
+ *
+ * \return void
+ */
 void renglon(void);
 
 #endif

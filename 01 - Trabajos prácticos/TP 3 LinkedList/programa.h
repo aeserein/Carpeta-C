@@ -8,9 +8,14 @@
 #include "Funciones/parser.h"
 #include "Funciones/ingresos.h"
 #include "Funciones/flow.h"
+#include "Funciones/carteles.h"
 
-void menu();
-
+/** \brief  Programa principal
+ *
+ * \param   void
+ * \return  int     -   Debug
+ *
+ */
 int programa(void);
 
 #endif // PROGRAMA_H_INCLUDED

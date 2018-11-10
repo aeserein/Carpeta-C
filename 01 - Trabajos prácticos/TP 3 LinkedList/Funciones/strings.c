@@ -10,7 +10,7 @@ void getString(char *vec, const char *mensaje, int len) {
     fflush(stdin);
     gets(aux);
     while(strlen(aux)>len || strlen(aux)<=0) {
-        printf("    Error. Intente nuevamente:\t");
+        printf("%s", mensaje);
         fflush(stdin);
         gets(aux);
     }

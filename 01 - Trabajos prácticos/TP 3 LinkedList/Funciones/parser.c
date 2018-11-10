@@ -1,12 +1,5 @@
 #include "parser.h"
 
-/** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
 int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee) {
 
     char id[6], name[NOMBRE], hours[10], salary[20];
@@ -33,13 +26,6 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee) {
     return count;
 }
 
-/** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo binario).
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
 int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee) {
     int count = 0;
 

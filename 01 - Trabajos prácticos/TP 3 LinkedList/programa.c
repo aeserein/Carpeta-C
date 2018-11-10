@@ -1,28 +1,5 @@
 #include "programa.h"
 
-void menu() {
-    renglon(); renglon();
-    printf("     _____________________________________________________________________\n"
-           "    |                                                                     |\n"
-           "    |    1. Cargar desde el archivo data.csv (modo texto)                 |\n"
-           "    |    2. Cargar desde el archivo data.bin (modo binario)               |\n"
-           "    |_____________________________________________________________________|\n"
-           "    |                                                                     |\n"
-           "    |    3. Alta de empleado                                              |\n"
-           "    |    4. Modificar datos de empleado                                   |\n"
-           "    |    5. Baja de empleado                                              |\n"
-           "    |    6. Listar empleados                                              |\n"
-           "    |    7. Ordenar empleados                                             |\n"
-           "    |_____________________________________________________________________|\n"
-           "    |                                                                     |\n"
-           "    |    8. Guardar empleados en el archivo data.csv (modo texto)         |\n"
-           "    |    9. Guardar empleados en el archivo data.bin (modo binario)       |\n"
-           "    |_____________________________________________________________________|\n"
-           "    |                                                                     |\n"
-           "    |    10. Salir                                                        |\n"
-           "    |_____________________________________________________________________|\n\n\n");
-}
-
 int programa(void) {
 
     int debug = -999;
@@ -44,7 +21,7 @@ int programa(void) {
                     c_listaCargada(debug);
                     //printf("\nTEST - loadFromText: %d\n", debug);
                 } else {
-                    printf("\nHACER CARTEL PARA 'YA CARGO ARCHIVO'\n");
+                    c_archivoYaCargado();
                 }
                 pausaYClear();
                 break;
@@ -56,7 +33,7 @@ int programa(void) {
                     fileLoaded = 1;
                     //printf("\nTEST - loadFromBinary: %d\n", debug);
                 } else {
-                    printf("\nHACER CARTEL PARA 'YA CARGO ARCHIVO'\n");
+                    c_archivoYaCargado();
                 }
                 pausaYClear();
                 break;
@@ -115,6 +92,7 @@ int programa(void) {
                 if ( !ll_isEmpty(listaEmpleados) ) {
                     debug = controller_saveAsText("data.csv", listaEmpleados);
                     //printf("\nTEST - saveAsText: %d\n", debug);
+                    c_archivoGuardado();
                 } else {
                     c_noHayEmpleadosEnElSistema();
                 }
@@ -125,6 +103,7 @@ int programa(void) {
                 if ( !ll_isEmpty(listaEmpleados) ) {
                     debug = controller_saveAsBinary("data.bin", listaEmpleados);
                     //printf("\nTEST - saveAsBinary: %d\n", debug);
+                    c_archivoGuardado();
                 } else {
                     c_noHayEmpleadosEnElSistema();
                 }
@@ -135,24 +114,6 @@ int programa(void) {
     }while(option!=10);
 
     ll_deleteLinkedList(listaEmpleados);
+    system("cls");
     return debug;
 }
-
-
-/** Preguntas
-
-    Diferencia entre pop y remove
-
-*/
-
-/** HACER
-
-    paginado
-
-    preguntar cuando sale si quiere guardar en archivo si no guardo anteriormente
-
-    set para modificar
-
-    contains para chequear cuando carga de archivo
-
-*/

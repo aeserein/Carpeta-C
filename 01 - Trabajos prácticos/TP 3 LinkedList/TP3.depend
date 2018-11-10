@@ -53,18 +53,18 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1541466343 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.c
+1541630260 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.c
 	"Controller.h"
 
 1540935447 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\linkedlist.h
 
-1541465150 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.h
+1541631299 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"flow.h"
 
-1541465693 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.c
+1541631299 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\employee.c
 	"Employee.h"
 
 1541294408 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.c
@@ -81,20 +81,20 @@
 	<conio.h>
 	<ctype.h>
 
-1541454319 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.c
+1541527035 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.c
 	"parser.h"
 
-1541454319 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.c
+1541631495 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\strings.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"strings.h"
 
-1541454319 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\main.c
+1541552626 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\main.c
 	"programa.h"
 
-1540937604 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\programa.h
+1541551772 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\programa.h
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -103,8 +103,9 @@
 	"Funciones/parser.h"
 	"Funciones/ingresos.h"
 	"Funciones/flow.h"
+	"Funciones/carteles.h"
 
-1541465116 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.h
+1541630260 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.h
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -114,8 +115,9 @@
 	"ingresos.h"
 	"strings.h"
 	"flow.h"
+	"carteles.h"
 
-1541288726 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.h
+1541631896 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\parser.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -124,12 +126,12 @@
 
 1540933975 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\ingresos.h
 
-1540935491 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\flow.h
+1541631437 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\flow.h
 
-1541466867 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\programa.c
+1541551995 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\programa.c
 	"programa.h"
 
-1541382046 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\linkedlist.h
+1541527035 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\linkedlist.h
 
 1541516499 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\funciones\controller.c
 	"Controller.h"
@@ -206,4 +208,12 @@
 
 1541513124 source:c:\users\alumno\desktop\carpeta-c\01 - trabajos prácticos\tp 3 linkedlist\programa.c
 	"programa.h"
+
+1541551939 d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\carteles.h
+	<stdio.h>
+	<stdlib.h>
+	"flow.h"
+
+1541552024 source:d:\alvaro\trabajos\programación\01 - programación 1\01 - trabajos prácticos\tp 3 linkedlist\funciones\carteles.c
+	"carteles.h"
 
