@@ -48,15 +48,19 @@ int ll_len(LinkedList* this) {
  *
  */
 static Node* getNode(LinkedList* this, int nodeIndex) {
+
+
     Node* pNode = NULL;
     short f;
 
     if (this!=NULL && nodeIndex>=0 && nodeIndex<ll_len(this)) {
         pNode = this->pFirstNode;
-        for (f=0 ; f<nodeIndex ; f++) {
+        while(nodeIndex>0){
             pNode = pNode->pNextNode;
+            nodeIndex--;
         }
     }
+
     return pNode;
 }
 
@@ -143,20 +147,15 @@ int test_addNode(LinkedList* this, int nodeIndex,void* pElement) {
 int ll_add(LinkedList* this, void* pElement) {
     Node *pNode = NULL;
     int returnAux = -1;
+    short c = 0;
 
     if (this!=NULL) {
         pNode = this->pFirstNode;
         while (pNode!=NULL) {
             pNode = pNode->pNextNode;
+            c++;
         }
-
-        pNode = (Node*)malloc(sizeof(Node));
-        if (pNode!=NULL) {
-            pNode->pNextNode = NULL;
-            pNode->pElement = pElement;
-            returnAux = 0;
-            this->size++;
-        }
+        returnAux = addNode(this, c, pElement);
     }
     return returnAux;
 }
@@ -177,8 +176,7 @@ void* ll_get(LinkedList* this, int index) {
     if (this!=NULL) {
         if (index>=0 && index<ll_len(this)) {
             pNode = getNode(this, index);
-            printf("\n\n%d\n\n", pNode);
-            if (pNode!=NULL){
+            if (pNode!=NULL) {
                 element = pNode->pElement;
             }
         }
@@ -201,7 +199,7 @@ int ll_set(LinkedList* this, int index, void* pElement) {
     Node *pNode = NULL;
     int returnAux = -1;
 
-    if (this!=NULL && index>=0 && index<this->size) {
+    if (this!=NULL && index>=0 && index<ll_len(this)) {
 
         pNode = getNode(this, index);
         pNode->pElement = pElement;
@@ -220,10 +218,26 @@ int ll_set(LinkedList* this, int index, void* pElement) {
                         ( 0) Si funciono correctamente
  *
  */
-int ll_remove(LinkedList* this,int index)
-{
-    int returnAux = -1;
+int ll_remove(LinkedList* this,int index) {
 
+    int returnAux = -1;
+    Node *pNode = NULL;
+    Node *anterior = NULL;
+    Node *siguiente = NULL;
+
+    if (this!=NULL && index>=0 && index<ll_len(this)) {
+
+        pNode = getNode(this, index);
+        anterior = getNode(this, index-1);
+        siguiente = getNode(this, index+1);
+        if (anterior!=NULL) {
+            anterior->pNextNode = siguiente;
+        }
+        this->size--;
+        free(pNode);
+
+        returnAux = 0;
+    }
     return returnAux;
 }
 
@@ -235,9 +249,26 @@ int ll_remove(LinkedList* this,int index)
                         ( 0) Si funciono correctamente
  *
  */
-int ll_clear(LinkedList* this)
-{
+int ll_clear(LinkedList* this) {
     int returnAux = -1;
+    int len;
+    Node *pNode = NULL;
+    printf("---------------------\n");
+
+    if (this!=NULL) {
+        len = ll_len(this);
+        printf("LEN ORIGINAL %d\n", len);
+        len--;
+        while (len>=0) {
+            printf("LEN %d\n", len);
+            pNode = getNode(this, len);
+            free(pNode);
+            len--;
+        }
+        printf("ULTIMO LEN %d\n", len);
+        this->size = 0;
+        returnAux = 0;
+    }
 
     return returnAux;
 }

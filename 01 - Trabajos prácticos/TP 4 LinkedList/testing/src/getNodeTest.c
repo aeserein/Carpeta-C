@@ -79,8 +79,8 @@ void getNodeTestCase03(void)
     Node* nodoAux;
 
     list = ll_newLinkedList();
-    nodo1 = malloc(sizeof(Node));
-    nodo2 = malloc(sizeof(Node));
+    nodo1 =(Node*) malloc(sizeof(Node));
+    nodo2 =(Node*) malloc(sizeof(Node));
     nodo1->pNextNode = nodo2;
     nodo2->pNextNode = NULL;
     list->pFirstNode = nodo1;

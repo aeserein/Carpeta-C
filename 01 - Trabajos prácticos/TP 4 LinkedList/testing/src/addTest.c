@@ -100,6 +100,8 @@ void addTestCase03(void)
         ll_add(list,pAux[i]);
     }
 
+
+
     for (i=0;i < LENGTH;i++)
     {
         nodoAux = test_getNode(list,i);

@@ -101,10 +101,10 @@ void startTesting(int testGroup)
             utest_printStartTesting("ll_get()");
             utest_init();
             utest_startTest(getTestCase01,getTestSetup,">Caso [Verifica retorno con parametros correctos]");
-            //utest_startTest(getTestCase02,getTestSetup,">Caso [Solicitar el primer elemento]");
-            //utest_startTest(getTestCase03,getTestSetup,">Caso [Solicitar el ultimo elemento]");
-            //utest_startTest(getTestCase04,getTestSetup,">Caso [Solicita elementos fuera de indice]");
-            //utest_startTest(getTestCase05,getTestSetup,">Caso [Solicitar elementos pasando una lista NULL]");
+            utest_startTest(getTestCase02,getTestSetup,">Caso [Solicitar el primer elemento]");
+            utest_startTest(getTestCase03,getTestSetup,">Caso [Solicitar el ultimo elemento]");
+            utest_startTest(getTestCase04,getTestSetup,">Caso [Solicita elementos fuera de indice]");
+            utest_startTest(getTestCase05,getTestSetup,">Caso [Solicitar elementos pasando una lista NULL]");
             utest_printStatistics("ll_get()");
             break;
 
