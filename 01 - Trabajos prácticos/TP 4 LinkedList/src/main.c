@@ -30,9 +30,9 @@ int main(void) {
     startTesting(2);  // ll_len
     startTesting(3);  // getNode - test_getNode
     startTesting(4);  // addNode - test_addNode
-/*    startTesting(5);  // ll_add
+    startTesting(5);  // ll_add
     startTesting(6);  // ll_get
-    startTesting(7);  // ll_set
+/*    startTesting(7);  // ll_set
     startTesting(8);  // ll_remove
     startTesting(9);  // ll_clear
     startTesting(10); // ll_deleteLinkedList
@@ -48,3 +48,9 @@ int main(void) {
 
     return 0;
 }
+
+/** PREGUNTAS
+    addNode (y derivados)
+        ¿Es necesario chequear que el elemento no sea null? ¿Qué pasa si quiero agregar un null?
+        Si verifico por null no cuenta el size++
+*/

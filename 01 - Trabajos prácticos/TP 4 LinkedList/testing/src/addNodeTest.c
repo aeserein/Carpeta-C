@@ -121,16 +121,8 @@ void addNodeTestCase05(void)
     test_addNode(list,0,other);
 
     nodoAux = test_getNode(list,0);
+    utest_assertEqualsPointerMsg(nodoAux->pElement,other,"El puntero al employee agregado en la pos 0 no corresponde\n");
 
-    if(nodoAux!=NULL)
-    {
-
-
-        utest_assertEqualsPointerMsg(nodoAux->pElement,other,"El puntero al employee agregado en la pos 0 no corresponde\n");
-   }
-    else
-        printf("lalala");
-    /*
     for (i=0;i < LENGTH;i++)
     {
         nodoAux = test_getNode(list,i+1);
@@ -138,5 +130,4 @@ void addNodeTestCase05(void)
         sprintf(msg,"\nError en el valor de retorno de <getNode> al solicitar el elemento en la  posicion %i\n",i);
         utest_assertEqualsPointerMsg(nodoAux->pElement,pAux[i],msg);
     }
-    */
 }
