@@ -99,7 +99,6 @@ void containsAllTestCase03(void)
     r = ll_containsAll(list,pOtherList);
     utest_assertEqualsIntMsg(r, 1 ,"Error en el valor de retorno <containsAll> si la lista2 no esta contenida se debe retornar 0");
 
-
 }
 
 void containsAllTestCase04(void)
