@@ -48,9 +48,3 @@ int main(void) {
 
     return 0;
 }
-
-/** PREGUNTAS
-    addNode (y derivados)
-        ¿Es necesario chequear que el elemento no sea null? ¿Qué pasa si quiero agregar un null?
-        Si verifico por null no cuenta el size++
-*/

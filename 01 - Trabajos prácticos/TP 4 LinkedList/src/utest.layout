@@ -2,108 +2,14 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="..\testing\inc\Employee.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="..\testing\src\subListTest.c" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3216" topLine="16" />
-		</Cursor>
-	</File>
 	<File name="..\testing\utest.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="5994" topLine="108" />
 		</Cursor>
 	</File>
-	<File name="..\testing\inc\addTest.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\testing\inc\deleteLinkedListTest.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="0" />
-		</Folding>
-	</File>
-	<File name="..\testing\src\lenTest.c" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1826" topLine="4" />
-		</Cursor>
-	</File>
-	<File name="..\testing\src\main_test.c" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="12227" topLine="222" />
-		</Cursor>
-		<Folding>
-			<Collapse line="0" />
-		</Folding>
-	</File>
-	<File name="..\testing\inc\addNodeTest.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="916" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="..\testing\src\Employee.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="250" topLine="5" />
-		</Cursor>
-		<Folding>
-			<Collapse line="22" />
-			<Collapse line="26" />
-			<Collapse line="38" />
-			<Collapse line="43" />
-		</Folding>
-	</File>
-	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1551" topLine="28" />
-		</Cursor>
-		<Folding>
-			<Collapse line="51" />
-		</Folding>
-	</File>
-	<File name="..\testing\src\addNodeTest.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1267" topLine="37" />
-		</Cursor>
-		<Folding>
-			<Collapse line="39" />
-			<Collapse line="44" />
-			<Collapse line="54" />
-			<Collapse line="61" />
-		</Folding>
-	</File>
-	<File name="..\testing\src\addTest.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3039" topLine="77" />
-		</Cursor>
-	</File>
-	<File name="..\testing\inc\sortTest.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="799" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="0" />
-		</Folding>
-	</File>
-	<File name="..\testing\inc\getTest.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="189" topLine="5" />
-		</Cursor>
-	</File>
-	<File name="..\testing\inc\subListTest.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="909" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="..\testing\src\getTest.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="999" topLine="32" />
-		</Cursor>
-	</File>
-	<File name="..\testing\src\getNodeTest.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2302" topLine="63" />
 		</Cursor>
 	</File>
 	<File name="..\testing\inc\lenTest.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -111,96 +17,10 @@
 			<Cursor1 position="834" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\testing\src\containsAllTest.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\testing\src\addTest.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2695" topLine="68" />
+			<Cursor1 position="3039" topLine="77" />
 		</Cursor>
-		<Folding>
-			<Collapse line="0" />
-			<Collapse line="40" />
-			<Collapse line="104" />
-		</Folding>
-	</File>
-	<File name="..\testing\src\clearTest.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1515" topLine="1" />
-		</Cursor>
-		<Folding>
-			<Collapse line="45" />
-		</Folding>
-	</File>
-	<File name="..\testing\inc\main_test.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="767" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="..\testing\utest.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2863" topLine="70" />
-		</Cursor>
-	</File>
-	<File name="LinkedList.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="15837" topLine="227" />
-		</Cursor>
-		<Folding>
-			<Collapse line="9" />
-			<Collapse line="15" />
-			<Collapse line="19" />
-			<Collapse line="26" />
-			<Collapse line="32" />
-			<Collapse line="34" />
-			<Collapse line="41" />
-			<Collapse line="64" />
-			<Collapse line="72" />
-			<Collapse line="76" />
-			<Collapse line="122" />
-			<Collapse line="131" />
-			<Collapse line="136" />
-			<Collapse line="143" />
-			<Collapse line="148" />
-			<Collapse line="150" />
-			<Collapse line="159" />
-			<Collapse line="184" />
-			<Collapse line="209" />
-			<Collapse line="241" />
-			<Collapse line="269" />
-			<Collapse line="295" />
-			<Collapse line="322" />
-			<Collapse line="330" />
-			<Collapse line="344" />
-			<Collapse line="353" />
-			<Collapse line="365" />
-			<Collapse line="373" />
-			<Collapse line="398" />
-			<Collapse line="406" />
-			<Collapse line="412" />
-			<Collapse line="416" />
-			<Collapse line="417" />
-			<Collapse line="428" />
-			<Collapse line="437" />
-			<Collapse line="444" />
-			<Collapse line="448" />
-			<Collapse line="451" />
-			<Collapse line="463" />
-			<Collapse line="473" />
-			<Collapse line="478" />
-			<Collapse line="482" />
-			<Collapse line="486" />
-			<Collapse line="488" />
-			<Collapse line="490" />
-			<Collapse line="503" />
-			<Collapse line="509" />
-			<Collapse line="512" />
-		</Folding>
-	</File>
-	<File name="..\testing\inc\containsAllTest.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="810" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="0" />
-		</Folding>
 	</File>
 	<File name="..\testing\src\sortTest.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -215,15 +35,91 @@
 			<Collapse line="126" />
 		</Folding>
 	</File>
-	<File name="..\testing\inc\deleteLinkedListTest.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\testing\src\clearTest.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="1515" topLine="1" />
+		</Cursor>
+		<Folding>
+			<Collapse line="45" />
+		</Folding>
+	</File>
+	<File name="..\testing\src\subListTest.c" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3216" topLine="16" />
 		</Cursor>
 	</File>
-	<File name="..\testing\inc\clearTest.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\testing\inc\addNodeTest.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="800" topLine="0" />
+			<Cursor1 position="916" topLine="0" />
 		</Cursor>
+	</File>
+	<File name="..\testing\inc\sortTest.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="799" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\testing\src\lenTest.c" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1826" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="..\testing\src\main_test.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12227" topLine="24" />
+		</Cursor>
+		<Folding>
+			<Collapse line="47" />
+			<Collapse line="51" />
+		</Folding>
+	</File>
+	<File name="LinkedList.c" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15894" topLine="55" />
+		</Cursor>
+		<Folding>
+			<Collapse line="9" />
+			<Collapse line="15" />
+			<Collapse line="26" />
+			<Collapse line="32" />
+			<Collapse line="41" />
+			<Collapse line="49" />
+			<Collapse line="63" />
+			<Collapse line="71" />
+			<Collapse line="75" />
+			<Collapse line="84" />
+			<Collapse line="111" />
+			<Collapse line="120" />
+			<Collapse line="125" />
+			<Collapse line="132" />
+			<Collapse line="148" />
+			<Collapse line="156" />
+			<Collapse line="171" />
+			<Collapse line="180" />
+			<Collapse line="196" />
+			<Collapse line="204" />
+			<Collapse line="230" />
+			<Collapse line="237" />
+			<Collapse line="258" />
+			<Collapse line="265" />
+			<Collapse line="277" />
+			<Collapse line="285" />
+			<Collapse line="306" />
+			<Collapse line="314" />
+			<Collapse line="328" />
+			<Collapse line="337" />
+			<Collapse line="349" />
+			<Collapse line="357" />
+			<Collapse line="384" />
+			<Collapse line="392" />
+			<Collapse line="414" />
+			<Collapse line="423" />
+			<Collapse line="449" />
+			<Collapse line="459" />
+			<Collapse line="489" />
+			<Collapse line="495" />
+			<Collapse line="507" />
+			<Collapse line="514" />
+		</Folding>
 	</File>
 	<File name="..\inc\LinkedList.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -234,5 +130,100 @@
 			<Collapse line="20" />
 			<Collapse line="25" />
 		</Folding>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="893" topLine="11" />
+		</Cursor>
+		<Folding>
+			<Collapse line="0" />
+		</Folding>
+	</File>
+	<File name="..\testing\src\Employee.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="250" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+			<Collapse line="9" />
+			<Collapse line="13" />
+		</Folding>
+	</File>
+	<File name="..\testing\src\getNodeTest.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2302" topLine="63" />
+		</Cursor>
+	</File>
+	<File name="..\testing\src\getTest.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="999" topLine="32" />
+		</Cursor>
+	</File>
+	<File name="..\testing\utest.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2863" topLine="70" />
+		</Cursor>
+	</File>
+	<File name="..\testing\src\containsAllTest.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2695" topLine="68" />
+		</Cursor>
+		<Folding>
+			<Collapse line="0" />
+			<Collapse line="40" />
+			<Collapse line="104" />
+		</Folding>
+	</File>
+	<File name="..\testing\inc\addTest.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="0" />
+		</Folding>
+	</File>
+	<File name="..\testing\inc\clearTest.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="800" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\testing\src\addNodeTest.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1267" topLine="37" />
+		</Cursor>
+		<Folding>
+			<Collapse line="39" />
+			<Collapse line="44" />
+			<Collapse line="54" />
+			<Collapse line="61" />
+		</Folding>
+	</File>
+	<File name="..\testing\inc\Employee.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\testing\inc\containsAllTest.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="810" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="0" />
+		</Folding>
+	</File>
+	<File name="..\testing\inc\main_test.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="767" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\testing\inc\subListTest.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="909" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\testing\inc\getTest.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="189" topLine="5" />
+		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
