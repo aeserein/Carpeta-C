@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1543243639 source:d:\serein\parcial 2\funciones\controller.c
+	"controller.h"
+
+1543239450 d:\serein\parcial 2\funciones\controller.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"LinkedList.h"
+	"estructura.h"
+	"parser.h"
+	"ingresos.h"
+	"strings.h"
+	"flow.h"
+
+1543241922 d:\serein\parcial 2\funciones\linkedlist.h
+
+1543243720 d:\serein\parcial 2\funciones\estructura.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"flow.h"
+
+1543232849 d:\serein\parcial 2\funciones\flow.h
+
+1543236463 d:\serein\parcial 2\funciones\parser.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"estructura.h"
+
+1543232849 d:\serein\parcial 2\funciones\ingresos.h
+
+1543232849 d:\serein\parcial 2\funciones\strings.h
+
+1543243967 source:d:\serein\parcial 2\funciones\estructura.c
+	"estructura.h"
+
+1543232849 source:d:\serein\parcial 2\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1543232849 source:d:\serein\parcial 2\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1543242638 source:d:\serein\parcial 2\funciones\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1543237384 source:d:\serein\parcial 2\funciones\parser.c
+	"parser.h"
+
+1543232849 source:d:\serein\parcial 2\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1543236017 source:d:\serein\parcial 2\main.c
+	"programa.h"
+
+1543232849 d:\serein\parcial 2\programa.h
+	<stdio.h>
+	<stdlib.h>
+	"Funciones/LinkedList.h"
+	"Funciones/controller.h"
+	"Funciones/estructura.h"
+	"Funciones/parser.h"
+	"Funciones/ingresos.h"
+	"Funciones/flow.h"
+
+1543243720 source:d:\serein\parcial 2\programa.c
+	"programa.h"
+

@@ -4,9 +4,9 @@
 #include <ctype.h>
 #include "strings.h"
 
-void getString(char *vector, const char *mensaje, int len) {
+void getString(char *vec, const char *mensaje, int len) {
     char aux[len];
-    printf("%s", *mensaje);
+    printf("%s", mensaje);
     fflush(stdin);
     gets(aux);
     while(strlen(aux)>len || strlen(aux)<0) {
@@ -14,7 +14,7 @@ void getString(char *vector, const char *mensaje, int len) {
         fflush(stdin);
         gets(aux);
     }
-    strcpy(vector, aux);
+    strcpy(vec, aux);
 }
 
 void primerasLetrasMayusculas(char texto[]) {
@@ -91,7 +91,6 @@ void ordenarEstosStrings(char strings[][50], int columnas) {
 }
 
 short tieneLetrasEsteString(char string[]) {
-    short len;
     short f;
 
     for (f=0 ; f<strlen(string) ; f++) {
