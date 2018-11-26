@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../inc/LinkedList.h"
+#include "LinkedList.h"
 
 
 static Node* getNode(LinkedList* this, int nodeIndex);
@@ -167,7 +167,6 @@ void* ll_get(LinkedList* this, int index) {
     }
     return element;
 }
-
 
 /** \brief Modifica un elemento de la lista
  *
@@ -489,7 +488,7 @@ LinkedList* ll_subList(LinkedList* this, int from, int to) {
 
 /** \brief Crea y retorna una nueva lista con los elementos de la lista pasada como parametro
  *
- * \param pList LinkedList* Puntero a la lista
+ * \param  pList LinkedList* Puntero a la lista
  * \return LinkedList* Retorna  (NULL) Error: si el puntero a la listas es NULL
                                 (puntero a la nueva lista) Si ok
 */
@@ -549,3 +548,126 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order) {
     }
     return returnAux;
 }
+
+/** \brief Crea una lista de elementos que cumplen una condición específica
+ *
+ * \param   LinkedList* this    -   Lista original
+ * \param   int (*pFunc)(void*) -   Puntero a función que determina si un elemento califica o no
+ * \return  LinkedList*         -   Nueva lista
+ */
+LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*)) {
+    LinkedList *nuevaLista = NULL;
+    void* elemento;
+    short c = 0;
+
+    if (this!=NULL && pFunc!=NULL) {
+        nuevaLista = ll_newLinkedList();
+
+        while (1) {
+
+            elemento = ll_get(this, c);
+            c++;
+            if (elemento!=NULL) {
+                if (pFunc(elemento)) {
+                    ll_add(nuevaLista, elemento);
+                }
+            } else {
+                break;
+            }
+
+        }
+    }
+    return nuevaLista;
+}
+
+/** \brief Crea una lista de elementos que cumplen una condición específica
+ *
+ * \param   LinkedList* this    -   Lista original
+ * \param   int (*pFunc)(void*) -   Puntero a función que determina si un elemento califica o no
+ * \return  LinkedList*         -   Nueva lista
+ */
+LinkedList* ll_filter_letra(LinkedList* this, int (*pFunc)(void*, char letra), char letra) {
+    LinkedList *nuevaLista = NULL;
+    void* elemento;
+    short c = 0;
+
+    if (this!=NULL && pFunc!=NULL) {
+        nuevaLista = ll_newLinkedList();
+
+        while (1) {
+
+            elemento = ll_get(this, c);
+            c++;
+            if (elemento!=NULL) {
+                if (pFunc(elemento, letra)) {
+                    ll_add(nuevaLista, elemento);
+                }
+            } else {
+                break;
+            }
+
+        }
+    }
+    return nuevaLista;
+}
+
+LinkedList* ll_filter_limite(LinkedList* this, int (*pFunc)(void* elemento, int limite), int limite, int direccion) {
+    LinkedList *nuevaLista = NULL;
+    void* elemento;
+    short c = 0;
+
+    if (this!=NULL && pFunc!=NULL) {
+        nuevaLista = ll_newLinkedList();
+        if (direccion==0) direccion = -1;
+
+        while (1) {
+
+            elemento = ll_get(this, c);
+            c++;
+            if (elemento!=NULL) {
+                if (pFunc(elemento, limite)==direccion || pFunc(elemento, limite)==0) {
+                    ll_add(nuevaLista, elemento);
+                }
+            } else {
+                break;
+            }
+
+        }
+    }
+    return nuevaLista;
+}
+
+LinkedList* ll_filter_max(LinkedList* this, int (*pFunc)(void* e1, void* e2), int cantidad, int order) {
+    LinkedList *nuevaLista = NULL;
+    int len;
+    short f, i;
+    void* elemento;
+    void* elementoDeNuevaLista;
+
+    if (this!=NULL) {
+        len = ll_len(this);
+        nuevaLista = ll_newLinkedList();
+        if (order==0) order = -1;
+
+        for (f=0 ; f<len ; f++) {
+            elemento = ll_get(this, f);
+
+            for (i=0 ; i<cantidad ; i++) {
+
+                elementoDeNuevaLista = ll_get(nuevaLista, i);
+
+                if (elementoDeNuevaLista == NULL ||
+                    pFunc(elemento, elementoDeNuevaLista)==order ||
+                    pFunc(elemento, elementoDeNuevaLista)==0) {
+
+                    ll_push(nuevaLista, i, elemento);
+                    i = cantidad;
+                    ll_remove(nuevaLista, cantidad);
+                }
+            }
+        }
+    }
+    return nuevaLista;
+}
+
+

@@ -51,7 +51,7 @@ LinkedList* ll_subList(LinkedList* this,int from,int to);
 LinkedList* ll_clone(LinkedList* this);
 int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);
 
-///-------------------------------------------------------------------------------------------------------------------
 LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*));
-Alguna función más?
-///-------------------------------------------------------------------------------------------------------------------
+LinkedList* ll_filter_letra(LinkedList* this, int (*pFunc)(void* elemento, char letra), char letra);
+LinkedList* ll_filter_limite(LinkedList* this, int (*pFunc)(void* elemento, int limite), int limite, int direccion);
+LinkedList* ll_filter_max(LinkedList* this, int (*pFunc)(void* e1, void* e2), int cantidad, int order);

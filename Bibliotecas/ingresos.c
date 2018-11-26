@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "strings.h"
 #define MENSAJES 65
 
@@ -102,3 +103,14 @@ short getShortBetween(short min, short max, char texto[MENSAJES]) {
 }
 
 /////////////////////////////////////////////////////////////////
+
+char getChar(char texto[MENSAJES]) {
+    char caracter;
+
+    do {
+        printf("%s", texto);
+        fflush(stdin);
+        caracter = getchar();
+    } while (isdigit(caracter));
+    return caracter;
+}

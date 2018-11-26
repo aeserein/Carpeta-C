@@ -52,4 +52,10 @@ short getShort(char[]);
  */
 short getShortBetween(short, short, char[]);
 
+/** \brief  Muestra un printf, pide un char y lo devuelve;
+ *
+ * \param   texto[MENSAJES] char
+ * \return  char
+ */
+char getChar(char texto[]);
 #endif

@@ -6,7 +6,7 @@
 
 void getString(char *vec, const char *mensaje, int len) {
     char aux[len];
-    printf("%s", *mensaje);
+    printf("%s", mensaje);
     fflush(stdin);
     gets(aux);
     while(strlen(aux)>len || strlen(aux)<0) {
