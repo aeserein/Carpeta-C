@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1543037996 source:d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\main.c
+	"programa.h"
+
+1543190142 source:d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1543189700 d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\linkedlist.h
+
+1543038671 source:d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\flow.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+
+1543189653 source:d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\estructura.c
+	"estructura.h"
+
+1543184230 d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\estructura.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"flow.h"
+
+1543038671 d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\flow.h
+
+1543190154 source:d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\controller.c
+	"controller.h"
+
+1543175333 d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\controller.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"LinkedList.h"
+	"estructura.h"
+	"parser.h"
+	"ingresos.h"
+	"strings.h"
+	"flow.h"
+
+1543045657 d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\parser.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"estructura.h"
+
+1543177523 d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\ingresos.h
+
+1540708780 d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\strings.h
+
+1543105332 source:d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\parser.c
+	"parser.h"
+
+1543038344 d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\programa.h
+	<stdio.h>
+	<stdlib.h>
+	"Funciones/LinkedList.h"
+	"Funciones/controller.h"
+	"Funciones/estructura.h"
+	"Funciones/parser.h"
+	"Funciones/ingresos.h"
+	"Funciones/flow.h"
+
+1543176165 source:d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\programa.c
+	"programa.h"
+
+1543177782 source:d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\ingresos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
+1543038463 source:d:\alvaro\trabajos\programación\01 - programación 1\02 - parciales\parcial\funciones\strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"strings.h"
+
