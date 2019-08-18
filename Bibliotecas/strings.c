@@ -17,6 +17,18 @@ void getString(char *vec, const char *mensaje, int len) {
     strcpy(vec, aux);
 }
 
+char* getString_dinamico(const char* mensaje) {
+    printf("%s", mensaje);
+
+    char* pString = (char*)malloc(sizeof(char)*1024);
+    scanf("%1023s",pString);
+
+    int len = strlen(pString);
+    pString = (char*)realloc(pString,sizeof(char)*(len+1));
+
+    return pString;
+}
+
 void primerasLetrasMayusculas(char texto[]) {
     int auxLength;
     short f;

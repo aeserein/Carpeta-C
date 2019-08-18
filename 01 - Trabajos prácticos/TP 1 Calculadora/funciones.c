@@ -79,15 +79,17 @@ void calculadora(void) {
     unsigned short opcion;
     float numeroUno;
     float numeroDos;
+
     float suma;
     float resta;
     float multiplicacion;
     float division;
     long factorial1;
     long factorial2;
-    unsigned short bOperaciones = 0;    // Bandera para que rebote si no se ingresaron los operandos o fueron cambiados
-    unsigned short bNumeroUno = 0;      // Bandera para declarar que float numeroUno está ingresado
-    unsigned short bNumeroDos = 0;      // Bandera para declarar que float numeroDos está ingresado
+
+    short bOperaciones = 0;    // Bandera para que rebote si no se ingresaron los operandos o fueron cambiados
+    short bNumeroUno = 0;      // Bandera para declarar que float numeroUno está ingresado
+    short bNumeroDos = 0;      // Bandera para declarar que float numeroDos está ingresado
 
 
     do {
@@ -100,7 +102,7 @@ void calculadora(void) {
         printf("  *****************************************\n");
         printf("  *  \t\t\t\t\t  *\n");
         printf("  *   1. Ingresar primer operando\t  *");
-        if (bNumeroUno == 1) {
+        if (bNumeroUno) {
             printf("\t");
             if (tieneDecimalesEsteFloat(numeroUno)){
                 printf("> %.2f\n" , numeroUno);
@@ -111,7 +113,7 @@ void calculadora(void) {
             printf("\n");
         }
         printf("  *   2. Ingresar segundo operando\t  *");
-        if (bNumeroDos == 1) {
+        if (bNumeroDos) {
             printf("\t");
             if (tieneDecimalesEsteFloat(numeroDos)){
                 printf("> %.2f\n" , numeroDos);

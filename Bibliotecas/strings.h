@@ -3,6 +3,8 @@
 
 void getString(char *vec, const char *mensaje, int len);
 
+char* getString_dinamico(const char* mensaje);
+
 void primerasLetrasMayusculas(char[]);
 
 void nombreYApellido(char[], int);
